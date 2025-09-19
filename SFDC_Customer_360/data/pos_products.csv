@@ -1,0 +1,110 @@
+PRODUCTCODE,PRODUCTNAME,PRODUCTLINE,PRODUCTSCALE,PRODUCTVENDOR,QUANTITYINSTOCK,BUYPRICE,MSRP
+S10_1678,"Horizon Jetpart 4B LTC Mobile Hotspot 890L",Hotspot,NULL,Horizon,7933,10,20
+S10_1949,"Horizon Wireless 4B LTC USB Modem 551L",Modem,NULL,Horizon,7305,10,20
+S10_2016,"Santech Phone 3",Smartphone,NULL,Santech,6625,15,30
+S10_4698,"ATC Silver (Certified Pre-Owned)",Smartphone,NULL,ATC,3252,15,30
+S10_4757,"BG Enlighten Bundle",Smartphone,NULL,BG,6791,20,40
+S10_4962,"ATC SoundIT",Smartphone,NULL,ATC,68,25,50
+S12_1099,"Void X2 by Dotorola",Smartphone,NULL,Rolo,3619,25,50
+S12_1108,"Horizon Jetpart 4B LTC Mobile Hotspot WiFi 4620L",Hotspot,NULL,Horizon,1579,25,50
+S12_1666,"Pamsung Intensity II in Metallic Blue",Smartphone,NULL,Pamsung,9997,25,50
+S12_2823,"Revolution by BG (Certified Pre-Owned)",Smartphone,NULL,BG,6906,35,70
+S12_3148,"Lucid by BG",Smartphone,NULL,BG,9123,40,80
+S12_3380,"Pamsung Get Go 2",Smartphone,NULL,Pamsung,1049,40,80
+S12_3891,"BG Paul",Smartphone,NULL,BG,5663,40,80
+S12_3990,"Horizon Wireless Fivespot Global Ready 3G Mobile Hotspot",Hotspot,NULL,Horizon,6125,40,80
+S12_4473,"Void CHARGE by Pamsung (Certified Pre-Owned)",Smartphone,NULL,Pamsung,7323,40,80
+S12_4675,"Void X2 by Dotorola Bundle",Smartphone,NULL,Rolo,2613,45,90
+S18_1097,"Void 4 ",Smartphone,NULL,Rolo,3975,50,100
+S18_1129,"Void KNIFE 16GB",Smartphone,NULL,Rolo,8693,50,100
+S18_1342,"Kiwi ePhone 4 - 8 GB in White",Smartphone,NULL,Kiwi,8635,50,100
+S18_1367,"Rainbow by BG",Smartphone,NULL,BG,9042,50,100
+S18_1589,"Pamsung Stratosphere",Smartphone,NULL,Pamsung,5330,50,100
+S18_1662,"Blueberry 91 smartphone",Smartphone,NULL,JIMI,2724,50,100
+S18_1749,"Void CHARGE by Pamsung",Smartphone,NULL,Pamsung,8826,50,100
+S18_1889,"Pamsung Darkside",Smartphone,NULL,Pamsung,9772,50,100
+S18_1984,"BG Introvert",Smartphone,NULL,BG,4724,50,100
+S18_2238,"Santech 4B LTC USB Modem UML290",Modem,NULL,Santech,540,50,100
+S18_2248,"Void 4 by (Certified Pre-Owned)",Smartphone,NULL,Rolo,8258,50,100
+S18_2319,"Santech Phone 2",Smartphone,NULL,Santech,9354,60,120
+S18_2325,"Pamsung Convoy 2",Smartphone,NULL,Pamsung,2018,60,120
+S18_2432,"Pamsung Stratosphere Bundle",Smartphone,NULL,Pamsung,992,70,140
+S18_2581,"Hand Preview 2",Smartphone,NULL,Hand,4357,75,150
+S18_2625,"Comeback Notebook",Notebook,NULL,Comeback,548,75,150
+S18_2795,"Blueberry 94 (Certified Pre-Owned)",Smartphone,NULL,JIMI,8164,75,150
+S18_2870,"Rainbow by BG (Certified Pre-Owned)",Smartphone,NULL,BG,4189,75,150
+S18_2949,"ATC Gold",Smartphone,NULL,ATC,5649,90,180
+S18_2957,"Tasio 1",Smartphone,NULL,Tasio,4259,90,180
+S18_3029,"Blueberry 93 smartphone",Smartphone,NULL,JIMI,3913,90,180
+S18_3136,"Universe S III 16GB by Pamsung in Blue",Smartphone,NULL,Pamsung,8347,100,200
+S18_3140,"Void RAZR MAXX by Dotorola",Smartphone,NULL,Rolo,7733,100,200
+S18_3232,"Kiwi ePhone 4S - 16 GB",Smartphone,NULL,Kiwi,6450,100,200
+S18_3233,"Universe Nexus by Pamsung",Smartphone,NULL,Pamsung,1917,100,200
+S18_3259,"ATC Bronze",Smartphone,NULL,ATC,7913,100,200
+S18_3278,"Tasio 3",Smartphone,NULL,Tasio,9127,100,200
+S18_3320,"Tasio 2",Smartphone,NULL,Tasio,8990,100,200
+S18_3482,"Blueberry 96",Smartphone,NULL,JIMI,7689,115,230
+S18_3685,"Blueberry 90 smartphone",Smartphone,NULL,JIMI,2378,115,230
+S18_3782,"Universe S III 32GB by Pamsung in Blue",Smartphone,NULL,Pamsung,5545,125,250
+S18_3856,"Kiwi ePhone 4S 32GB in White",Smartphone,NULL,Kiwi,6553,150,300
+S18_4027,"Dotorola XOOM 4B LTC (Certified Pre-Owned)",Smartphone,NULL,Rolo,8290,150,300
+S18_4409,"Kiwi ePhone 4S 64GB",Smartphone,NULL,Kiwi,3128,200,400
+S18_4522,"CP Notebook",Notebook,NULL,CP,6645,200,400
+S18_4600,"Pamsung Universe Tab 7.7 (Certified Pre-Owned)",Tablet,NULL,Pamsung,1249,200,400
+S18_4668,"Void XYTAB 8.2 16GB",Tablet,NULL,Rolo,3209,215,430
+S18_4721,"Void XYTAB  8.2 32GB",Tablet,NULL,Rolo,1005,215,430
+S18_4933,"Pamsung Universe Tab 10.1 16GB White",Tablet,NULL,Pamsung,4074,215,430
+S24_1046,"Pamsung Universe Tab 10.1 32GB White",Tablet,NULL,Pamsung,7003,215,430
+S24_1444,"Pamsung Universe Tab 7.7",Tablet,NULL,Pamsung,8197,225,450
+S24_1578,"Void XYTAB 16GB (Certified Pre-Owned)",Tablet,NULL,Rolo,3627,240,480
+S24_1628,"Void XYTAB 10.1 16GB",Tablet,NULL,Rolo,7332,265,530
+S24_1785,"Void XYTAB 10.1 32GB",Tablet,NULL,Rolo,15,315,630
+S24_1937,"Void XYTAB 10.1 64GB",Tablet,NULL,Rolo,1898,365,730
+S24_2000,"BG Enlighten",Smartphone,NULL,BG,2847,10,20
+S24_2011,"Xperia PlayIT by Tony",Smartphone,NULL,Tony,2327,10,20
+S24_2022,"Blueberry Bend 3G 9330 Social Messaging Ready smartphone",Smartphone,NULL,JIMI,6840,10,20
+S24_2300,"Void Pro",Smartphone,NULL,Rolo,2350,10,20
+S24_2360,"Santech Phone 1",Smartphone,NULL,Santech,2542,10,20
+S24_2766,"BG Cosmos 2",Smartphone,NULL,BG,5942,10,20
+S24_2840,"Horizon Jetpart 4B LTC Mobile Hotspot WiFi 4510L",Hotspot,NULL,Horizon,1452,10,20
+S24_2841,"Horizon Wireless Home Phone Connect","Home Phone",NULL,Horizon,7723,10,20
+S24_2887,"BG Ally (Certified Pre-Owned)",Smartphone,NULL,BG,9173,10,20
+S24_2972,"Santech  (Certified Pre-Owned)",Modem,NULL,Santech,4695,10,20
+S24_3151,"Horizon Jetpart 4B LTC Mobile Hotspot SCH-LC11 (Certified Pre-Owned)",Hotspot,NULL,Horizon,7995,10,20
+S24_3191,"Void ICONIC 16GB",Smartphone,NULL,Rolo,2902,10,20
+S24_3371,"Blueberry 95",Smartphone,NULL,JIMI,9446,10,20
+S24_3420,"Void 7 Smartphone",Smartphone,NULL,Rolo,6621,10,20
+S24_3432,"Pamsung Stratosphere (Certified Pre-Owned)",Smartphone,NULL,Pamsung,6600,10,20
+S24_3816,"Kiwi ePad 16GB (Black)",Tablet,NULL,Kiwi,6812,265,530
+S24_3856,"Kiwi ePad with 32GB (White)",Tablet,NULL,Kiwi,2081,365,730
+S24_3949,"Kiwi ePad 64GB (Black)",Tablet,NULL,Kiwi,6582,415,830
+S24_3969,"Kiwi ePad 2 Wiâ€“Fi 3G 16GB BLACK",Tablet,NULL,Kiwi,4710,265,530
+S24_4048,"Kiwi ePad 2 Wiâ€“Fi 3G 32GB BLACK",Tablet,NULL,Kiwi,2756,315,630
+S24_4258,"Kiwi ePad 2 Wiâ€“Fi 3G 64GB WHITE",Tablet,NULL,Kiwi,7869,365,730
+S24_4278,"Horizon Wireless 4B LTC USB Modem 551L (Certified Pre-Owned)",Modem,NULL,Horizon,5099,15,30
+S24_4620,"Redtooth headset",Accessory,NULL,Horizon,178,10,20
+S32_1268,"ePhone Case",Accessory,NULL,Horizon,9241,10,20
+S32_1374,"AnVoid Case",Accessory,NULL,Horizon,2874,10,20
+S32_2206,Charger,Accessory,NULL,Horizon,8601,10,20
+S32_2509,"ePad Dock",Accessory,NULL,Horizon,814,10,20
+S32_3207,"ePhone Dock",Accessory,NULL,Horizon,136,10,20
+S32_3522,"Wireless Headset",Accessory,NULL,Horizon,3341,10,20
+S32_4289,"Wired Headset",Accessory,NULL,Horizon,7062,10,20
+S32_4485,"ePhone Cover",Accessory,NULL,Horizon,1016,10,20
+S50_1341,"AnVoid Cover",Accessory,NULL,Horizon,1645,10,20
+S50_1392,"Redtooth headset 2",Accessory,NULL,"Phone Xcessories",600,10,20
+S50_1514,"ePhone Case 2",Accessory,NULL,"Phone Xcessories",6582,10,20
+S50_4713,"AnVoid Case 2",Accessory,NULL,"Phone Xcessories",4710,10,20
+S700_1138,"Charger 2",Accessory,NULL,"Phone Xcessories",2756,10,20
+S700_1691,"ePad Dock 2",Accessory,NULL,"Phone Xcessories",7869,10,20
+S700_1938,"ePhone Dock 2",Accessory,NULL,"Phone Xcessories",5099,10,20
+S700_2466,"Wireless Headset ",Accessory,NULL,"Phone Xcessories",178,10,20
+S700_2610,"Wired Headset 2",Accessory,NULL,"Phone Xcessories",9241,10,20
+S700_2824,"ePhone Cover 2",Accessory,NULL,"Phone Xcessories",2874,10,20
+S700_2834,"AnVoid Cover 2",Accessory,NULL,"Phone Xcessories",8601,10,20
+S700_3167,"Redtooth headset 2",Accessory,NULL,"Phone Xcessories",814,10,20
+S700_3505,"ePhone Case 3",Accessory,NULL,"Phone Xcessories",136,10,20
+S700_3962,"AnVoid Case 3",Accessory,NULL,"Phone Xcessories",3341,10,20
+S700_4002,"Charger 3",Accessory,NULL,"Phone Xcessories",7062,10,20
+S72_1253,"ePad Dock 3",Accessory,NULL,"Phone Xcessories",1016,10,20
+S72_3212,"ePhone Dock 3",Accessory,NULL,"Phone Xcessories",1645,10,20

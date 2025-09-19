@@ -1,0 +1,361 @@
+<Schema metamodelVersion="4.00" missingLink="ignore" name="Customer360 Mongo" quoteSQL="false">
+  <PhysicalSchema>
+    <Table name="customer360">
+      <ColumnDefs>
+        <CalculatedColumnDef name="product_code" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].product_code</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="_id" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$_id</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="buy_price" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].buy_price</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="product_vendor" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].product_vendor</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="registration_referring_url" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$registration_referring_url</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="holiday" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$holiday</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="e_count" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].e_count</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="product_name" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].product_name</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="language" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$language</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="flag_optin_email_marketing" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$flag_optin_email_marketing</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="order_date" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].order_date</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name="order_month" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].order_month</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name="order_year" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].order_year</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name="order_day" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].order_day</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="total_cost" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].total_cost</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="registration_date" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$registration_date</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="gender" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$gender</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="total_price" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].total_price</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="event_hour" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].event_hour</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="gross_profit" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].gross_profit</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="id_user" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$id_user</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="product_line" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].product_line</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="event_date" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].event_date</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name="event_year" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].event_year</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name="event_month" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].event_month</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name="event_day" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].event_day</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="country_name" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$country_name</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="profit_range" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].profit_range</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="dob" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$dob</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="country_code" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$country_code</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="price_each" type="Numeric">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].price_each</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="event" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$event_data[*].event</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="primary_use" type="String">
+          <ExpressionView>
+            <SQL dialect="generic">$primary_use</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name="qty_ordered" type="Integer">
+          <ExpressionView>
+            <SQL dialect="generic">$pos_data[*].qty_ordered</SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+      </ColumnDefs>
+    </Table>
+  </PhysicalSchema>
+  <Cube name="Customer360PoS">
+    <Dimensions>
+     <Dimension  name="Product" key="Product code" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="false" keyColumn="product_vendor" name="Product vendor" />
+		  <Attribute hasHierarchy="false" keyColumn="product_line" name="Product line" />
+		  <Attribute hasHierarchy="false" keyColumn="product_name" name="Product name" />
+		  <Attribute hasHierarchy="false" keyColumn="product_code" name="Product code" />
+        </Attributes>
+		<Hierarchies>
+          <Hierarchy name='Products' allMemberName='All Products'>
+            <Level attribute='Product vendor'/>
+            <Level attribute='Product line'/>
+            <Level attribute='Product name'/>
+          </Hierarchy>
+        </Hierarchies>
+      </Dimension>
+	  <Dimension key="id_user" name="User" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="false" keyColumn="id_user" name="id_user" />
+		  <Attribute hasHierarchy="true" keyColumn="language" name="Language" />
+		  <Attribute hasHierarchy="true" keyColumn="flag_optin_email_marketing" name="Flag_optin_email_marketing" />
+		  <Attribute hasHierarchy="true" keyColumn="registration_date" name="Registration_date" />
+		  <Attribute hasHierarchy="true" keyColumn="gender" name="Gender" />
+		  <Attribute hasHierarchy="true" keyColumn="country_name" name="Country_name" />
+		  <Attribute hasHierarchy="true" keyColumn="dob" name="Dob" />
+		  <Attribute hasHierarchy="true" keyColumn="country_code" name="Country_code" />
+		  <Attribute hasHierarchy="true" keyColumn="primary_use" name="Primary_use" />
+        </Attributes>
+      </Dimension>
+      <Dimension key="Registration_referring_url" name="Registration_referring_url" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="true" keyColumn="registration_referring_url" name="Registration_referring_url">
+          </Attribute>
+        </Attributes>
+      </Dimension>
+     <Dimension name='Time' table='customer360' type='TIME' key='order_date'>
+        <Attributes>
+          <Attribute name='Year' keyColumn='order_year' levelType='TimeYears' hasHierarchy='false'/>
+          <Attribute name='Month' levelType='TimeMonths' hasHierarchy='false'>
+            <Key>
+              <Column name='order_year'/>
+              <Column name='order_month'/>
+            </Key>
+            <Name>
+              <Column name='order_month'/>
+            </Name>
+          </Attribute>
+          <Attribute name='Day' levelType='TimeDays' hasHierarchy='false'>
+            <Key>
+              <Column name='order_date'/>
+            </Key>
+            <Name>
+              <Column name='order_day'/>
+            </Name>
+            <OrderBy>
+              <Column name='order_date'/>
+            </OrderBy>
+          </Attribute>
+          <Attribute name='order_date' keyColumn='order_date' hasHierarchy='false'/>
+        </Attributes> 
+        <Hierarchies>
+          <Hierarchy name='Order Date' hasAll='false'> 
+            <Level attribute='Year'>
+              <Annotations><Annotation name='AnalyzerDateFormat'>[yyyy]</Annotation></Annotations>
+            </Level>
+            <Level attribute='Month'>
+              <Annotations><Annotation name='AnalyzerDateFormat'>[yyyy].[M]</Annotation></Annotations>
+            </Level>
+			<Level attribute='Day'>
+              <Annotations><Annotation name='AnalyzerDateFormat'>[yyyy].[M].[D]</Annotation></Annotations>
+            </Level>
+          </Hierarchy>
+        </Hierarchies>
+      </Dimension>
+      <Dimension key="Profit_range" name="Profit_range" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="true" keyColumn="profit_range" name="Profit_range">
+          </Attribute>
+        </Attributes>
+      </Dimension>
+    </Dimensions>
+    <MeasureGroups>
+      <MeasureGroup name="customer360" table="customer360">
+        <Measures>
+          <Measure aggregator="sum" column="total_price" name="Total price"/>
+		  <Measure aggregator="sum" column="total_cost" name="Total Cost"/>
+          <Measure aggregator="sum" column="gross_profit" name="Gross profit"/>
+          <Measure aggregator="sum" column="buy_price" name="Buy Price"/>
+          <Measure aggregator="sum" column="price_each" name="Price each"/>
+          <Measure aggregator="sum" column="qty_ordered" name="Qty ordered"/>
+		  <Measure aggregator="distinct-count" column="id_user" name="Users" />
+        </Measures>
+        <DimensionLinks>
+          <FactLink dimension="Registration_referring_url"/>
+          <FactLink dimension="Product"/>
+          <FactLink dimension="Time"/>
+          <FactLink dimension="User"/>
+          <FactLink dimension="Profit_range"/>
+        </DimensionLinks>
+      </MeasureGroup>
+    </MeasureGroups>
+  </Cube>
+  <Cube name="Customer360Events">
+    <Dimensions>
+     <Dimension  name="Events" key="Event" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="true" keyColumn="event" name="Event" hierarchyAllMemberName='All Events' />
+        </Attributes>
+      </Dimension>
+	  <Dimension key="id_user" name="User" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="false" keyColumn="id_user" name="id_user" />
+		  <Attribute hasHierarchy="true" keyColumn="language" name="Language" />
+		  <Attribute hasHierarchy="true" keyColumn="flag_optin_email_marketing" name="Flag_optin_email_marketing" />
+		  <Attribute hasHierarchy="true" keyColumn="registration_date" name="Registration_date" />
+		  <Attribute hasHierarchy="true" keyColumn="gender" name="Gender" />
+		  <Attribute hasHierarchy="true" keyColumn="country_name" name="Country_name" />
+		  <Attribute hasHierarchy="true" keyColumn="dob" name="Dob" />
+		  <Attribute hasHierarchy="true" keyColumn="country_code" name="Country_code" />
+		  <Attribute hasHierarchy="true" keyColumn="primary_use" name="Primary_use" />
+        </Attributes>
+      </Dimension>
+      <Dimension key="Registration_referring_url" name="Registration_referring_url" table="customer360">
+        <Attributes>
+          <Attribute hasHierarchy="true" keyColumn="registration_referring_url" name="Registration_referring_url">
+          </Attribute>
+        </Attributes>
+      </Dimension>
+     <Dimension name='Time' table='customer360' type='TIME' key='event_date'>
+        <Attributes>
+          <Attribute name='Year' keyColumn='event_year' levelType='TimeYears' hasHierarchy='false'/>
+          <Attribute name='Month' levelType='TimeMonths' hasHierarchy='false'>
+            <Key>
+              <Column name='event_year'/>
+              <Column name='event_month'/>
+            </Key>
+            <Name>
+              <Column name='event_month'/>
+            </Name>
+          </Attribute>
+          <Attribute name='Day' levelType='TimeDays' hasHierarchy='false'>
+            <Key>
+              <Column name='event_date'/>
+            </Key>
+            <Name>
+              <Column name='event_day'/>
+            </Name>
+            <OrderBy>
+              <Column name='event_date'/>
+            </OrderBy>
+          </Attribute>
+          <Attribute name='event_date' keyColumn='event_date' hasHierarchy='false'/>
+        </Attributes> 
+        <Hierarchies>
+          <Hierarchy name='Ovent Date' hasAll='true'> 
+            <Level attribute='Year'>
+              <Annotations><Annotation name='AnalyzerDateFormat'>[yyyy]</Annotation></Annotations>
+            </Level>
+            <Level attribute='Month'>
+              <Annotations><Annotation name='AnalyzerDateFormat'>[yyyy].[M]</Annotation></Annotations>
+            </Level>
+			<Level attribute='Day'>
+              <Annotations><Annotation name='AnalyzerDateFormat'>[yyyy].[M].[D]</Annotation></Annotations>
+            </Level>
+          </Hierarchy>
+        </Hierarchies>
+      </Dimension>
+    </Dimensions>
+    <MeasureGroups>
+      <MeasureGroup name="customer360" table="customer360">
+        <Measures>
+          <Measure aggregator="sum" column="e_count" name="Events"/>
+        </Measures>
+        <DimensionLinks>
+          <FactLink dimension="Registration_referring_url"/>
+          <FactLink dimension="Events"/>
+          <FactLink dimension="Time"/>
+          <FactLink dimension="User"/>
+        </DimensionLinks>
+      </MeasureGroup>
+    </MeasureGroups>
+  </Cube>
+</Schema>

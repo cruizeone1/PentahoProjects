@@ -1,0 +1,20 @@
+$(document).ready(function() {
+	$.ajaxSetup({
+	  headers: {
+	    'Authorization': "Basic " + btoa("admin:Pre5ales")
+	  }
+	});
+
+	//url = "http://localhost:9080/pentaho-di/kettle/executeTrans/?trans=/pentaho/versions/Pentaho_6_1/server/data-integration-server/tomcat/webapps/onboard/PDI/t_file2hdfs.ktr"	
+	//url = "http://localhost:9080/pentaho-di/kettle/executeTrans/?rep=6.1%20Repo&user=admin&pass=Pre5ales&trans=/public/Demo/MDI%20-%20Self%20Service%20Onboarding/t_file2hdfs"
+	//url = "http://localhost:9080/pentaho-di/kettle/executeTrans/?rep=6.1%20Repo&user=admin&pass=Pre5ales&trans=/public/MDI%20-%20Self%20Service%20Onboarding/t_file2hdfs.ktr"
+	//url = "http://localhost:8080/pentaho/kettle/executeTrans/?rep=Pentaho%20Repo&user=admin&pass=Pre5ales&trans=/public/mdi-sso/t_file2hdfs.ktr"
+	url = "http://localhost:8080/pentaho/kettle/executeTrans/?trans=/pentaho/current_version/pentaho-server/tomcat/webapps/onboard/PDI/t_file2hdfs.ktr"	
+	file_type = $("#file_type").val();
+	url += "&FILE_TYPE=" + file_type;
+	customer_name = $("#customer_name").val();
+	url += "&CUSTOMER_NAME=" + customer_name;
+	
+	$.get( url, function(data, status){ $("#ajaxdata").html(data); });
+	
+});

@@ -1,0 +1,13 @@
+#SETUP FOR TRANSFORMATIONS#
+
+#Postgres setup for "t_load_postgres.ktr"
+#  If you are unsure of port: $ netstat -a | grep -i pgsql
+$ psql postgres
+	postgres=# create database customer_360;
+	postgres=# alter database customer_360 owner to postgres;
+	postgres=# \c customer_360
+	postgres=# create table customer_360(id int);
+	postgres=# \q
+	
+
+

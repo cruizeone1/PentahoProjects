@@ -1,0 +1,36 @@
+
+<annotations> 
+  <annotation> 
+    <name>dc2fcf52-4088-41f8-b9df-d46e9e32348e</name>  
+    <field/>  
+    <type>UPDATE_MEASURE</type>  
+    <properties> 
+      <property> 
+        <name>aggregationType</name>  
+        <value><![CDATA[SUM]]></value> 
+      </property>  
+      <property> 
+        <name>measure</name>  
+        <value><![CDATA[[Measures].[Sales]]]></value> 
+      </property>  
+      <property> 
+        <name>name</name>  
+        <value><![CDATA[]]></value> 
+      </property>  
+      <property> 
+        <name>format</name>  
+        <value><![CDATA[$ #,##0]]></value> 
+      </property>  
+      <property> 
+        <name>caption</name>  
+        <value><![CDATA[Sales]]></value> 
+      </property>  
+      <property> 
+        <name>cube</name>  
+        <value><![CDATA[cpg_sales2]]></value> 
+      </property> 
+    </properties> 
+  </annotation>  
+  <sharedDimension>N</sharedDimension>  
+  <description/> 
+</annotations>

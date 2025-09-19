@@ -1,0 +1,2 @@
+172.19.22.140 - hcpnbu [24/May/2016:10:38:33 -0600] "HEAD /nbu3/ HTTP/1.1" 200 0 nbutest1@hs3 10
+172.19.22.140 - hcpnbu [24/May/2016:10:39:32 -0600] "GET /nbu3/?location HTTP/1.1" 200 124 nbutest1@hs3 5

@@ -1,0 +1,75 @@
+<Schema name="cpg_keywords">
+  <Dimension name="Dim date">
+    <Hierarchy name="Date sk" hasAll="true" primaryKey="date_sk">
+      <Table name="dim_date" schema="public"/>
+      
+      <Level name="Year" visible="true" column="year_number" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        
+      <Level name="Quarter" visible="true" column="quarter_name" ordinalColumn="quarter_number" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['Q'q]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        <Level name="Month" visible="true" column="month_name" ordinalColumn="month_number" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['Q'q].[MMMM]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        <Level name="Day" visible="true" column="day_of_month_number" ordinalColumn="day_of_month_number" type="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['Q'q].[MMMM].[d]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Geography">
+    <Hierarchy hasAll="true" primaryKey="sales_datekey">
+      <Table name="cpg_keywords" schema="public"/>
+      <Level name="State" uniqueMembers="false" column="State" type="String">
+        <Annotations>
+          <Annotation name="Data.Role">Geography</Annotation>
+          <Annotation name="Geo.Role">state</Annotation>
+          <Annotation name="Geo.RequiredParents">country</Annotation>
+        </Annotations>
+      </Level>
+      <Level name="Zipcode" uniqueMembers="false" column="zipcode" type="Numeric">
+        <Annotations>
+          <Annotation name="Data.Role">Geography</Annotation>
+          <Annotation name="Geo.Role">postal_code</Annotation>
+          <Annotation name="Geo.RequiredParents">country</Annotation>
+        </Annotations>
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Keyword">
+    <Hierarchy hasAll="true" primaryKey="sales_datekey">
+      <Table name="cpg_keywords" schema="public"/>
+      <Level name="Keyword" uniqueMembers="false" column="keyword" type="String">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="cpg_keywords">
+    <Table name="cpg_keywords" schema="public"/>
+    <DimensionUsage name="Dim date" source="Dim date" foreignKey="sales_datekey"/>
+    <DimensionUsage name="Geography" source="Geography" foreignKey="date_sk"/>
+    <DimensionUsage name="Keyword" source="Keyword" foreignKey="date_sk"/>
+    <Measure name="Mentions" column="mentions" aggregator="sum"/>
+  </Cube>
+</Schema>

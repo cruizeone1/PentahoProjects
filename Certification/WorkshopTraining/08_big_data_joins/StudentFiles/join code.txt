@@ -1,0 +1,87 @@
+Populate Tower Table
+
+DROP TABLE IF EXISTS ${app.tower.tbl};
+
+CREATE EXTERNAL TABLE ${app.tower.tbl}
+(
+region STRING, tower_id int, status STRING, duration double, call_ref_number STRING 
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+LOCATION '${app.hdfs.base.dir}${app.hdfs.tables.dir}${app.hdfs.tables.tower}' 
+;
+
+Populate Call Data Table
+
+DROP TABLE IF EXISTS ${app.call.tbl};
+
+CREATE EXTERNAL TABLE ${app.call.tbl}
+(
+call_date string, 
+phone_number string, 
+call_ref_number STRING, 
+call_month string, 
+call_year string, 
+call_dow string, 
+area_code string, 
+state string, 
+country string, 
+time_zone string, 
+calls int
+)
+
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+LOCATION '${app.hdfs.base.dir}${app.hdfs.tables.dir}${app.hdfs.tables.call}';
+
+
+Populate Parquet Tables
+
+
+DROP TABLE IF EXISTS ${app.tower.tbl.parquet};
+DROP TABLE IF EXISTS ${app.call.tbl.parquet};
+
+CREATE TABLE ${app.tower.tbl.parquet} (region STRING, tower_id int, status STRING, duration double, call_ref_number STRING ) STORED as PARQUET;
+CREATE TABLE ${app.call.tbl.parquet} (call_date string, phone_number string, call_ref_number STRING, call_month string, call_year string, call_dow string, area_code string, state string, country string, time_zone string, calls int) STORED as PARQUET;
+
+insert overwrite table ${app.tower.tbl.parquet} select * from ${app.tower.tbl};
+insert overwrite table ${app.call.tbl.parquet} select * from ${app.call.tbl};
+
+
+Create Table for Joined Data Set
+
+DROP TABLE IF EXISTS ${app.join.tbl};
+
+CREATE EXTERNAL TABLE ${app.join.tbl}
+(
+call_date string, 
+phone_number string, 
+call_ref_number STRING, 
+calling_state string, 
+calls int, 
+region STRING, 
+tower_id int, 
+status STRING, 
+duration double
+)
+
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+LOCATION '${app.hdfs.base.dir}${app.hdfs.tables.dir}${app.hdfs.tables.join}';
+
+
+Populate Joined Table
+
+INSERT OVERWRITE TABLE ${app.join.tbl}
+SELECT 
+${app.call.tbl.parquet}.call_date, 
+${app.call.tbl.parquet}.phone_number, 
+${app.call.tbl.parquet}.call_ref_number, 
+${app.call.tbl.parquet}.state, 
+${app.call.tbl.parquet}.calls, 
+${app.tower.tbl.parquet}.region, 
+${app.tower.tbl.parquet}.tower_id, 
+${app.tower.tbl.parquet}.status, 
+${app.tower.tbl.parquet}.duration
+FROM ${app.call.tbl.parquet} INNER JOIN ${app.tower.tbl.parquet} 
+ON ${app.call.tbl.parquet}.call_ref_number = ${app.tower.tbl.parquet}.call_ref_number;
+

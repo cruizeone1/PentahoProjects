@@ -1,0 +1,46 @@
+Demo flow
+
+start with dashboard 1 to show a spike in sales = “Q” why is there a spike in Aug 2014?
+==================================================
+create add-hoc report:
+“new sales analysis”
+sales by month
+filter on year = 2014
+filter on category = chocolate
+create user defined measure - trend measure - “% growth” period_type=month number_periods=2 show_trend_as=% of change from previous period
+remove sales from report
+switch to chart format and explore the % changes highlighting august as an unknown as seen in dashboard.
+===================================================
+
+go to PDI and show bringing in social data to enrich the reports:
+walk through sales ktr merge to integrate data records:
+view output fields = sales and product ingest
+then show input fields for “combine data” step
+
+walk through social ktr’s to bring in bigdata semi and unstructured to add context
+Sentiment ktr
+
+Keyword ktr:
+other ways i have to visualize my data throughout the pipeline include - 
+double select to preview data input
+
+or i can even analyze data in-motion before it gets to the output database
+select table output - analyze in pdi
+select chart column:
+mentions - Vertical
+state - Horizontal
+filter keyword = contains hershey
+
+come back into ad-hoc analysis report and double select the august column to open linked dashboard 2
+
+Now that we have added more types of data to provide more context around the sales we can now answer the original question of what was behind the increase in sales for august,
+
+“appears to be tied to back to school and school football activities where packaging matches school colors”
+
+Now that we have answered the question that was asked, we can take that one step further with a 
+
+Recommendation:
+Let’s modify our packaging and marketing campaigns for all Geos that contain larger colleges and schools to match their regional colors in order to boost sales not just for chocolate line but for all categories of product sales for the future.  
+
+
+

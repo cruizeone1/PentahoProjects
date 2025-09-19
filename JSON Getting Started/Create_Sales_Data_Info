@@ -1,0 +1,12 @@
+CREATE TABLE "public".sales_data_info
+(
+  customername VARCHAR(35)
+, sales INTEGER
+, phone VARCHAR(17)
+, city VARCHAR(15)
+, STATE VARCHAR(15)
+, country VARCHAR(15)
+, postalcode VARCHAR(12)
+, dealsize VARCHAR(255)
+)
+;

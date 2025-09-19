@@ -1,0 +1,16 @@
+web_metric_summary:
+{ $unwind : "$event_data" },
+{ $group : { 
+	_id: 1, 
+	Visits : {$sum: { $cond: [ { $eq: [ "$event_data.event", "Visit" ]},1,0]}},
+	Purchases  : {$sum: { $cond: [ { $eq: [ "$event_data.event", "Purchase" ]},1,0]}},
+	Responses : {$sum: { $cond: [ { $eq: [ "$event_data.event", "Responded to Offer" ]},1,0]}},
+	Total_Events: {$sum: 1}
+}}}
+
+POS Metrics - pie_chart
+{ $unwind : "$pos_data" },
+{ $group : { _id : "$pos_data.profit_range", count : { $sum : 1 } } },
+{$sort:{count: -1}}
+
+

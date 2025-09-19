@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="mapQuery" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_zipcode_geomap.ktr</KtrFile>
+      </Connection>
+      <Connection id="generalInfoTableQuery" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_zipcode_geomap.ktr</KtrFile>
+      </Connection>
+      <Connection id="detailInfoTableQuery" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_zipcode_sidebar_detail.ktr</KtrFile>
+         <variables datarow-name="stateParam" variable-name="Param_ZipCode"/>
+      </Connection>
+      <Connection id="findUserLocationQry" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_findZip_by_location.ktr</KtrFile>
+         <variables datarow-name="input_latitude" variable-name="input_latitude"/>
+         <variables datarow-name="input_longitude" variable-name="input_longitude"/>
+      </Connection>
+      <Connection id="triggerSDRQry_new_new" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_kickstart_job.ktr</KtrFile>
+         <variables datarow-name="dataSourceParam" variable-name="dataSourceParam"/>
+         <variables datarow-name="param_age_range" variable-name="param_age_range"/>
+         <variables datarow-name="param_annual_hh_income" variable-name="param_annual_hh_income"/>
+         <variables datarow-name="param_cc_debt" variable-name="param_cc_debt"/>
+         <variables datarow-name="param_end_loan_date" variable-name="param_end_loan_date"/>
+         <variables datarow-name="param_interest_rate" variable-name="param_interest_rate"/>
+         <variables datarow-name="param_loan_debt" variable-name="param_loan_debt"/>
+         <variables datarow-name="param_mortgage_term" variable-name="param_mortgage_term"/>
+         <variables datarow-name="param_networth" variable-name="param_networth"/>
+         <variables datarow-name="param_recent_web_activity_flag"
+                    variable-name="param_recent_web_activity_flag"/>
+         <variables datarow-name="param_start_loan_date" variable-name="param_start_loan_date"/>
+         <variables datarow-name="zipParameter" variable-name="zipParameter"/>
+      </Connection>
+      <Connection id="triggerSDRQry_new" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_kickstart_job.ktr</KtrFile>
+         <variables datarow-name="param_age_range" variable-name="param_age_range"/>
+         <variables datarow-name="dataSourceParam" variable-name="dataSourceParam"/>
+         <variables datarow-name="param_annual_hh_income" variable-name="param_annual_hh_income"/>
+         <variables datarow-name="param_cc_debt" variable-name="param_cc_debt"/>
+         <variables datarow-name="param_start_loan_date" variable-name="param_start_loan_date"/>
+         <variables datarow-name="param_end_loan_date" variable-name="param_end_loan_date"/>
+         <variables datarow-name="param_interest_rate" variable-name="param_interest_rate"/>
+         <variables datarow-name="param_loan_debt" variable-name="param_loan_debt"/>
+         <variables datarow-name="param_mortgage_term" variable-name="param_mortgage_term"/>
+         <variables datarow-name="param_networth" variable-name="param_networth"/>
+         <variables datarow-name="param_recent_web_activity_flag"
+                    variable-name="param_recent_web_activity_flag"/>
+         <variables datarow-name="zipParameter" variable-name="zipParameter"/>
+      </Connection>
+      <Connection id="triggerSDRQry" type="kettle.TransFromFile">
+         <KtrFile>../ktr/t_kickstart_job.ktr</KtrFile>
+         <variables datarow-name="param_age_range" variable-name="ageRangeParam"/>
+         <variables datarow-name="annualIncomeParam" variable-name="param_annual_hh_income"/>
+         <variables datarow-name="ccDebtParam" variable-name="param_cc_debt"/>
+         <variables datarow-name="endDateParam" variable-name="param_end_loan_date"/>
+         <variables datarow-name="interestRateParam" variable-name="param_interest_rate"/>
+         <variables datarow-name="currentLoanParam" variable-name="param_loan_debt"/>
+         <variables datarow-name="mortgageTermParam" variable-name="param_mortgage_term"/>
+         <variables datarow-name="param_networth" variable-name="netWorthParam"/>
+         <variables datarow-name="customerActivityParam"
+                    variable-name="param_recent_web_activity_flag"/>
+         <variables datarow-name="startDateParam" variable-name="param_start_loan_date"/>
+         <variables datarow-name="dataSourceParam" variable-name="dataSourceParam"/>
+         <variables datarow-name="zipParameter" variable-name="zipParameter"/>
+      </Connection>
+      <Connection id="netWorthSelectorQuery" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="annualIncomeQuery" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="ccDebtSelectorQry" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="mortgageTermSelectorQuery" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="interestRateSelectorQuery" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="currentLoanDebt" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+      <Connection id="ageRangeSelectorQuery" type="scripting.scripting">
+         <Initscript/>
+         <Language>beanshell</Language>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="mapQuery" id="mapQuery" type="kettle">
+      <Name>mapQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[ouput]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="generalInfoTableQuery" id="generalInfoTableQuery"
+               type="kettle">
+      <Name>generalInfoTableQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[tableOutput]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="detailInfoTableQuery" id="detailInfoTableQuery"
+               type="kettle">
+      <Name>detailInfoTableQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="07030" name="stateParam" type="String"/>
+      </Parameters>
+      <Query><![CDATA[tblOutput]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="findUserLocationQry" id="findUserLocationQry"
+               type="kettle">
+      <Name>findUserLocationQry</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="" name="input_latitude" type="String"/>
+         <Parameter default="" name="input_longitude" type="String"/>
+      </Parameters>
+      <Query><![CDATA[output]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="triggerSDRQry_new_new" id="triggerSDRQry_new_new"
+               type="kettle">
+      <Name>triggerSDRQry_new_new</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="" name="param_age_range" type="String"/>
+      </Parameters>
+      <Query><![CDATA[Dummy]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="triggerSDRQry_new" id="triggerSDRQry_new"
+               type="kettle">
+      <Name>triggerSDRQry_new</Name>
+      <Cache duration="3600" enabled="false"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="" name="param_age_range" type="StringArray"/>
+         <Parameter default="" name="dataSourceParam" type="String"/>
+         <Parameter default="" name="param_annual_hh_income" type="StringArray"/>
+         <Parameter default="" name="param_cc_debt" type="StringArray"/>
+         <Parameter default="" name="param_start_loan_date" type="StringArray"/>
+         <Parameter default="" name="param_end_loan_date" type="StringArray"/>
+         <Parameter default="" name="param_interest_rate" type="StringArray"/>
+         <Parameter default="" name="param_loan_debt" type="StringArray"/>
+         <Parameter default="" name="param_mortgage_term" type="StringArray"/>
+         <Parameter default="" name="param_networth" type="StringArray"/>
+         <Parameter default="" name="param_recent_web_activity_flag" type="String"/>
+         <Parameter default="" name="zipParameter" type="StringArray"/>
+      </Parameters>
+      <Query><![CDATA[Dummy]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="triggerSDRQry" id="triggerSDRQry" type="kettle">
+      <Name>triggerSDRQry</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters>
+         <Parameter default="10-20" name="ageRangeParam" type="String"/>
+         <Parameter default="$0-$100,000" name="annualIncomeParam" type="String"/>
+         <Parameter default="$5,000-$10,000" name="ccDebtParam" type="String"/>
+         <Parameter default="12-31-2010" name="endDateParam" type="String"/>
+         <Parameter default="6%" name="interestRateParam" type="String"/>
+         <Parameter default="$150,000-$500,000" name="currentLoanParam" type="String"/>
+         <Parameter default="240;360" name="mortgageTermParam" type="String"/>
+         <Parameter default="$200,000-$400,000" name="netWorthParam" type="String"/>
+         <Parameter default="true" name="customerActivityParam" type="String"/>
+         <Parameter default="1-1-2007" name="startDateParam" type="String"/>
+         <Parameter default="testSource" name="dataSourceParam" type="String"/>
+         <Parameter default="[]" name="zipParameter" type="String"/>
+      </Parameters>
+      <Query><![CDATA[Dummy]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="netWorthSelectorQuery" id="netWorthSelectorQuery"
+               type="jsonScriptable">
+      <Name>netWorthSelectorQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["10000-19999", "$10,000 - $19,999"],
+      ["20000-29999", "$20,000 - $29,999"],
+      ["30000-39999", "$30,000 - $39,999"],
+      ["40000-49999", "$40,000 - $49,999"],
+      ["50000-59999", "$50,000 - $59,999"],
+      ["60000-69999", "$60,000 - $69,999"],
+      ["70000-79999", "$70,000 - $79,999"],
+      ["80000-89999", "$80,000 - $89,999"],
+      ["90000-99999", "$90,000 - $99,999"],
+      ["100000+", "$100,000+"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="annualIncomeQuery" id="annualIncomeQuery"
+               type="jsonScriptable">
+      <Name>annualIncomeQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+        ["$0-$80,000","$0-$80,000"],
+        ["$80,001-$140,000","$80,001-$140,000"],
+        ["$140,001-$200,000","$140,001-$200,000"],
+        ["$200,001-$260,000","$200,001-$260,000"],
+        ["$260,001-$320,000","$260,001-$320,000"],
+        ["$320,001-$380,000","$320,001-$380,000"],
+        ["$380,001-$440,000","$380,001-$440,000"],
+        ["$440,001-$500,000","$440,001-$500,000"],
+        ["$500,001-$560,000","$500,001-$560,000"],
+        ["$560,001-$620,000+","$560,001-$620,000+"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ccDebtSelectorQry" id="ccDebtSelectorQry"
+               type="jsonScriptable">
+      <Name>ccDebtSelectorQry</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+        ["$0-$2,000","$0-$2,000"],
+        ["$2,001-$2,500","$2,001-$2,500"],
+        ["$2,501-$4,000","$2,501-$4,000"],
+        ["$4,001-$5,500","$4,001-$5,500"],
+        ["$5,501-$7,000","$5,501-$7,000"],
+        ["$7,001-$8,500","$7,001-$8,500"],
+        ["$8,501-$10,000","$8,501-$10,000"],
+        ["$10,001-$11,500","$10,001-$11,500"],
+        ["$11,501-$13,000","$11,501-$13,000"],
+        ["$13,001-$14,500","$13,001-$14,500"],
+        ["$14,501-$16,000+","$14,501-$16,000+"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="mortgageTermSelectorQuery"
+               id="mortgageTermSelectorQuery"
+               type="jsonScriptable">
+      <Name>mortgageTermSelectorQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["180", "180"],
+      ["240", "240"],
+      ["360", "360"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="interestRateSelectorQuery"
+               id="interestRateSelectorQuery"
+               type="jsonScriptable">
+      <Name>interestRateSelectorQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["0-3", "0-3"],
+      ["3.1-4", "3.1-4"],
+      ["4.1-5", "4.1-5"],
+      ["5.1-6", "5.1-6"],
+      ["6.1-7", "6.1-7"],
+      ["7.1+", "7.1+"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="currentLoanDebt" id="currentLoanDebt"
+               type="jsonScriptable">
+      <Name>currentLoanDebt</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+        ["$0-$250,000", "$0-$250,000"],
+        ["$250,001-$350,000", "$250,001-$350,000"],
+        ["$350,001-$450,000", "$350,001-$450,000"],
+        ["$450,001-$550,000", "$450,001-$550,000"],
+        ["$550,001-$650,000", "$550,001-$650,000"],
+        ["$650,001-$750,000", "$650,001-$750,000"],
+        ["$750,001-$850,000", "$750,001-$850,000"],
+        ["$850,001-$950,000+", "$850,001-$950,000+"]
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+   <DataAccess access="public" connection="ageRangeSelectorQuery" id="ageRangeSelectorQuery"
+               type="jsonScriptable">
+      <Name>ageRangeSelectorQuery</Name>
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[{
+   "resultset":[
+      ["25-29", "25-29"],
+      ["30-34", "30-34"],
+      ["35-39", "35-39"],
+      ["40-44", "40-44"],
+      ["45-49", "45-49"],
+      ["50-54", "50-54"],
+      ["55-59+", "55-59+"]      
+   ],
+
+   "metadata":[
+      {"colIndex":0,"colType":"String","colName":"id"},
+      {"colIndex":1,"colType":"String","colName":"range"}
+   ]
+}]]></Query>
+   </DataAccess>
+</CDADescriptor>

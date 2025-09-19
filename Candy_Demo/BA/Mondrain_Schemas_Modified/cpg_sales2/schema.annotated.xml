@@ -1,0 +1,110 @@
+<Schema name="cpg_sales2">
+  <Dimension name="Dim date" type="TimeDimension">
+    <Hierarchy hasAll="true" name="Year number" primaryKey="date_sk">
+      <Table name="dim_date" schema="public"/>
+      
+      <Level column="year_number" hideMemberIf="Never" levelType="TimeYears" name="Year" type="String" uniqueMembers="true" visible="true">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              [yyyy]
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup">Time</Annotation>            
+          </Annotations>
+        </Level>
+        <Level column="quarter_name" hideMemberIf="Never" levelType="TimeQuarters" name="Quarter" ordinalColumn="quarter_number" type="String" uniqueMembers="false" visible="true">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              [yyyy].['Q'q]
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup">Time</Annotation>            
+          </Annotations>
+        </Level>
+        <Level column="month_name" hideMemberIf="Never" levelType="TimeMonths" name="Month" ordinalColumn="month_number" type="String" uniqueMembers="false" visible="true">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              [yyyy].['Q'q].[MMMM]
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup">Time</Annotation>            
+          </Annotations>
+        </Level>
+        <Level column="day_of_month_number" hideMemberIf="Never" levelType="TimeDays" name="Day" ordinalColumn="day_of_month_number" type="String" uniqueMembers="false" visible="true">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              [yyyy].['Q'q].[MMMM].[d]
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup">Time</Annotation>            
+          </Annotations>
+        </Level>
+
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Dimproduct">
+    <Hierarchy hasAll="true" name="Productkey" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="productkey" name="Productkey" type="Numeric" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+    <Hierarchy hasAll="true" name="Category" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="category" name="Category" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+    <Hierarchy hasAll="true" name="Brand" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="brand" name="Brand" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+    <Hierarchy hasAll="true" name="Product line" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="product_line" name="Product line" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+    <Hierarchy hasAll="true" name="Proudct id" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="proudct_id" name="Proudct id" type="Numeric" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+    <Hierarchy hasAll="true" name="Product" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="product" name="Product" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+    <Hierarchy hasAll="true" name="Package" primaryKey="productkey">
+      <Table name="dimproduct" schema="public"/>
+      <Level column="package" name="Package" type="String" uniqueMembers="false">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Geography">
+    <Hierarchy hasAll="true" primaryKey="locationkey">
+      <Table name="dimlocation" schema="public"/>
+      <Level column="State" name="State" type="String" uniqueMembers="false">
+        <Annotations>
+          <Annotation name="Data.Role">Geography</Annotation>
+          <Annotation name="Geo.Role">state</Annotation>
+          <Annotation name="Geo.RequiredParents">country</Annotation>
+        </Annotations>
+      </Level>
+      <Level column="locationkey" name="Locationkey" type="Numeric" uniqueMembers="false">
+      </Level>
+      <Level column="Postal Code" name="Postal Code" type="Numeric" uniqueMembers="false">
+        <Annotations>
+          <Annotation name="Data.Role">Geography</Annotation>
+          <Annotation name="Geo.Role">postal_code</Annotation>
+          <Annotation name="Geo.RequiredParents">country</Annotation>
+        </Annotations>
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="cpg_sales2">
+    <Table name="cpg_sales" schema="public"/>
+    <DimensionUsage foreignKey="sales_datekey" name="Dim date" source="Dim date"/>
+    <DimensionUsage foreignKey="productkey" name="Dimproduct" source="Dimproduct"/>
+    <DimensionUsage foreignKey="locationkey" name="Geography" source="Geography"/>
+    <Measure aggregator="sum" column="locationkey" name="Locationkey"/>
+    <Measure aggregator="sum" column="productkey" name="Productkey"/>
+    <Measure aggregator="sum" caption="Sales" column="sales" formatString="$ #,##0" name="Sales"/>
+    <Measure aggregator="sum" column="sales_datekey" name="Sales datekey"/>
+    <Measure aggregator="sum" column="units" name="Units"/>
+  </Cube>
+</Schema>

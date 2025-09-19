@@ -1,0 +1,65 @@
+<Schema name="cpg_sentiment">
+  <Dimension name="Dim date">
+    <Hierarchy name="Date sk" hasAll="true" primaryKey="date_sk">
+      <Table name="dim_date" schema="public"/>
+      
+<Level name="Year" visible="true" column="year_number" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        <Level name="Quarter" visible="true" column="quarter_name" ordinalColumn="quarter_number" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['Q'q]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        <Level name="Month" visible="true" column="month_name" ordinalColumn="month_number" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['Q'q].[MMMM]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+        <Level name="Day" visible="true" column="day_of_month_number" ordinalColumn="day_of_month_number" type="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['Q'q].[MMMM].[d]]]>
+            </Annotation>
+            <Annotation name="AnalyzerBusinessGroup"><![CDATA[Time]]></Annotation>            
+          </Annotations>
+        </Level>
+      
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Tweets">
+    <Hierarchy name="Title" hasAll="true" primaryKey="tweet_datekey">
+      <Table name="cpg_sentiment" schema="public"/>
+      <Level name="Title" uniqueMembers="false" column="title" type="String">
+      </Level>
+      <Level name="Description" uniqueMembers="false" column="description" type="String">
+      </Level>
+      <Level name="Link" uniqueMembers="false" column="link" type="String">
+      </Level>
+      <Level name="Source" uniqueMembers="false" column="source" type="String">
+      </Level>
+      <Level name="User" uniqueMembers="false" column="user" type="String">
+      </Level>
+      <Level name="Zip" uniqueMembers="false" column="zip" type="Numeric">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="cpg_sentiment">
+    <Table name="cpg_sentiment" schema="public"/>
+    <DimensionUsage name="Dim date" source="Dim date" foreignKey="tweet_datekey"/>
+    <DimensionUsage name="Tweets" source="Tweets" foreignKey="date_sk"/>
+    <Measure name="Mentions" column="mentions" aggregator="sum"/>
+    <Measure name="Sentiment" column="sentiment" aggregator="sum"/>
+  </Cube>
+</Schema>

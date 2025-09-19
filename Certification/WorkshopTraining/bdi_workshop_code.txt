@@ -1,0 +1,94 @@
+Use Case: Data Warehouse Optimization
+MapReduce Exercise 2:
+Step 17 - Input Format - org.apache.hadoop.mapred.TextInputFormat
+Step 18 - Output Format - org.apache.hadoop.mapred.TextOutputFormat
+Step 30 - mapred.map.child.java.opts
+Step 32 - mapred.reduce.child.java.opts 
+
+Use Case: Streamlined Data Refinery
+Part 1 - PDI Exercise 1
+Step 31 - LOAD DATA INPATH '/demo/data_refinery/SDR_geolocation_data.txt' OVERWRITE INTO TABLE call_detail_geo;
+Step 36 - 
+	CREATE TABLE call_detail_geo
+	(
+  	calldate STRING, 
+  	source_number STRING, 
+  	home_latitude DOUBLE, 
+  	home_longitude DOUBLE, 
+  	distance DOUBLE, 
+  	direction STRING, 
+  	location_category STRING, 
+  	new_lat DOUBLE, 
+  	new_long DOUBLE
+	)
+	row format delimited
+	fields terminated by '|'
+	STORED AS TEXTFILE;
+
+Part 1 - PDI Exercise 2
+Step 7
+DROP TABLE IF EXISTS call_detail_combined;
+CREATE TABLE call_detail_combined
+(
+  key STRING
+, source_number STRING
+, call_date STRING
+, call_month INT
+, call_year INT
+, day_of_week INT
+, area_code STRING
+, state STRING
+, country STRING
+, time_zone STRING
+, weekday STRING
+, num_calls INT
+, home_latitude DOUBLE
+, home_longitude DOUBLE
+, distance DOUBLE
+, direction STRING
+, location_category STRING
+, new_lat DOUBLE
+, new_long DOUBLE
+);
+
+INSERT INTO TABLE call_detail_combined
+SELECT
+  cdr.key
+, cdr.source_number
+, cdr.call_date
+, cdr.call_month
+, cdr.call_year
+, cdr.day_of_week
+, cdr.area_code
+, cdr.state
+, cdr.country
+, cdr.time_zone
+, cdr.weekday
+, cdr.num_calls
+, cdg.home_latitude
+, cdg.home_longitude
+, cdg.distance
+, cdg.direction
+, cdg.location_category
+, cdg.new_lat
+, cdg.new_long
+FROM
+call_detail_records cdr JOIN call_detail_geo cdg ON (cdr.source_number = cdg.source_number);
+
+
+Use Case: Customer 360
+Part 3: Pentaho Report Designer
+PRD Exercise 1: Add a MongoDB web metrics query
+Step 11
+	{ $unwind : "$event_data" },
+	{ $group : { 
+		_id: 1, 
+		Visits : {$sum: { $cond: [ { $eq: [ "$event_data.event", "Visit" ]},1,0]}},
+		Purchases  : {$sum: { $cond: [ { $eq: [ "$event_data.event", "Purchase" ]},1,0]}},
+		Responses : {$sum: { $cond: [ { $eq: [ "$event_data.event", "Responded to Offer" ]},1,0]}},
+	}}}
+
+PRD Exercise 2: Add a MongoDB POS query
+Step 6
+	{ $group : { _id : "$pos_data.profit_range", count : { $sum : 1 } } },
+	{$sort:{count: -1}}

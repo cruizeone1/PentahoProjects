@@ -1,0 +1,246 @@
+<Schema name="equity_360" quoteSql="false" missingLink="ignore" metamodelVersion="4.00">
+  <PhysicalSchema >
+    <Table name="equity_quotes_tweets_live"  >
+      <ColumnDefs>
+        <CalculatedColumnDef name='record_type' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $record_type
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='symbol' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $company_dim.symbol
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='date_desc' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.date_desc
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='month_key' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.month_key
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='week_of_year' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.week_of_year
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+
+		 <CalculatedColumnDef name='month_desc' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.month_desc
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		 <CalculatedColumnDef name='quarter_key' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.quarter_key
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		 <CalculatedColumnDef name='quarter_desc' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.quarter_desc
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		 <CalculatedColumnDef name='year_key' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $date_dim.year_key
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		<CalculatedColumnDef name='time_seconds' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $time_dim.time_seconds
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		 <CalculatedColumnDef name='hours' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $time_dim.hours
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		 <CalculatedColumnDef name='minutes' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $time_dim.minutes
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+		 <CalculatedColumnDef name='seconds' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $time_dim.seconds
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='bid_price' type="Numeric" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $quote_info.bid_price
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='offer_price' type="Numeric" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $quote_info.offer_price
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='bid_qty' type="Integer" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $quote_info.bid_qty
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='offer_qty' type="Integer" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $quote_info.offer_qty
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+	    <CalculatedColumnDef name='tweet_id' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.tweet_id
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='user' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.user
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='sentiment_index' type="Numeric" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.sentiment_index
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='body' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.body
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='retweet_count' type="Numeric" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.retweet_count
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='followers' type="Numeric" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.followers
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+        <CalculatedColumnDef name='language' type="String" >
+          <ExpressionView >
+            <SQL dialect='generic'>
+              $tweet_info.language
+            </SQL>
+          </ExpressionView>
+        </CalculatedColumnDef>
+      </ColumnDefs>
+    </Table >
+  </PhysicalSchema>
+  <Cube name='equity_quotes_tweets_live' defaultMeasure='Bid Price'>
+    <Dimensions>
+      <Dimension name='Tweet User' table='equity_quotes_tweets_live' key='User'>
+        <Attributes>
+          <Attribute name='User' table='equity_quotes_tweets_live' keyColumn='user' hasHierarchy='true'/>
+        </Attributes>
+      </Dimension>
+	  <Dimension name='Symbol' table='equity_quotes_tweets_live' key='Symbol'>
+        <Attributes>
+          <Attribute name='Symbol' table='equity_quotes_tweets_live' keyColumn='symbol' hasHierarchy='true'/>
+        </Attributes>
+      </Dimension>
+      <Dimension name='Date' table='equity_quotes_tweets_live' key='Date'>
+        <Attributes>
+          <Attribute name='Date' table='equity_quotes_tweets_live' keyColumn='date_desc' hasHierarchy='true'/>
+        </Attributes>
+      </Dimension>
+	  <Dimension name='Tweet' table='equity_quotes_tweets_live' key='Body'>
+        <Attributes>
+          <Attribute name='Body' table='equity_quotes_tweets_live' keyColumn='body' hasHierarchy='true'/>
+        </Attributes>
+      </Dimension> 
+	  <Dimension name='Times' table='equity_quotes_tweets_live' key='Seconds'>
+        <Attributes>
+          <Attribute name='Hours' table='equity_quotes_tweets_live' keyColumn='hours' hasHierarchy='false'/>
+		  <Attribute name='Minutes' table='equity_quotes_tweets_live' hasHierarchy='false'>
+            <Key>
+              <Column name='hours'/>
+              <Column name='minutes'/>
+            </Key>
+			<Name>
+              <Column name='minutes'/>
+            </Name>
+		  </Attribute>
+		  <Attribute name='Seconds' keyColumn='time_seconds' hasHierarchy='false'/>
+        </Attributes>
+		<Hierarchies>
+          <Hierarchy name='Times' allMemberName='All Times'>
+            <Level attribute='Hours'/>
+            <Level attribute='Minutes'/>
+			<Level attribute='Seconds'/>
+          </Hierarchy>
+        </Hierarchies>
+      </Dimension>
+      
+	 </Dimensions>
+    <MeasureGroups>
+      <MeasureGroup name='Equity' table='equity_quotes_tweets_live'>
+        <Measures>
+          <Measure name='Bid Price' column='bid_price' aggregator='avg' formatString='#,###.00'/>
+		  <Measure name='Offer Price' column='offer_price' aggregator='avg' formatString='#,###.00'/>
+		  <Measure name='Max Offer Price' column='offer_price' aggregator='max' formatString='#,###.00'/>
+		  <Measure name='Bid Qty' column='bid_qty' aggregator='sum' formatString='#,###'/>
+		  <Measure name='Offer Qty' column='offer_qty' aggregator='sum' formatString='#,###'/>
+		  <Measure name='Sentiment Index' column='sentiment_index' aggregator='avg' formatString='#,###.00'/>
+		  <Measure name='Retweet Count' column='retweet_count' aggregator='sum' formatString='#,###'/>
+		  <Measure name='Followers' column='followers' aggregator='sum' formatString='#,###'/>
+		  <Measure name='Tweet Count' column='tweet_id' aggregator='count' formatString='#,###'/>
+        </Measures>
+        <DimensionLinks>
+          <FactLink dimension='Date'/>
+		  <FactLink dimension='Times'/>
+          <FactLink dimension='Tweet User'/>
+		  <FactLink dimension='Tweet'/>
+		  <FactLink dimension='Symbol'/>
+        </DimensionLinks>
+      </MeasureGroup>
+    </MeasureGroups>
+  </Cube>
+</Schema>

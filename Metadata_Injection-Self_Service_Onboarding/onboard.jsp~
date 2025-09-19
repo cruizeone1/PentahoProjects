@@ -1,0 +1,238 @@
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ page import="org.apache.commons.fileupload.*" %>
+<%@ page import="org.apache.commons.fileupload.disk.*" %>
+<%@ page import="org.apache.commons.fileupload.servlet.*" %>
+<%@ page import="org.apache.commons.io.output.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.appendGrid-1.6.2.js"></script>
+<script type="text/javascript" src="js/onboard.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.appendGrid-1.6.2.css"/>
+<link type="text/css" rel="stylesheet" href="css/master.css" media="all" />
+<link type="text/css" rel="stylesheet" href="css/custom.css" media="all" />
+
+</head>
+<body>
+<%
+	File file ;
+	int maxFileSize = 5000 * 1024;
+	int maxMemSize = 5000 * 1024;
+	String driver = "org.postgresql.Driver";
+	String url = "jdbc:postgresql://localhost:5433/postgres";
+	String username = "postgres";
+	String password = "password";
+	String myDataField = null;
+	String qry = "";   
+	String filePath = "/pentaho/versions/Pentaho_6_1/server/data-integration-server/tomcat/webapps/onboard/data/";
+	String customer = "";
+	String file_type = "";
+	String delimiter = "";
+	int has_header = 0;
+	int map_id = 0;
+	int map_detail_ct = 0;
+	int seq = 0;
+	String fld = "";
+	HashMap grid = new HashMap();
+
+	request.setCharacterEncoding("UTF-8");
+	String contentType = request.getContentType();
+	if ((contentType.indexOf("multipart/form-data") >= 0)) {
+
+		DiskFileItemFactory factory = new DiskFileItemFactory();
+		factory.setSizeThreshold(maxMemSize);
+		factory.setRepository(new File("c:\\temp"));
+		ServletFileUpload upload = new ServletFileUpload(factory);
+		upload.setSizeMax( maxFileSize );
+		try{ 
+			List fileItems = upload.parseRequest(request);
+			Iterator i = fileItems.iterator();
+			while ( i.hasNext () ) 
+			{
+				FileItem fi = (FileItem)i.next();
+				if ( fi.isFormField () )  {
+					String fieldName = fi.getFieldName();
+					String fieldValue = fi.getString();
+					switch (fieldName) {
+						case "customer":
+							customer = fieldValue;
+							break;
+						case "file_type":
+							file_type = fieldValue;
+							break;
+						case "delimiter":
+							delimiter = fieldValue;
+							break;
+						case "has_header":
+							has_header = 1;
+							break;
+					}
+					if (fieldName.length() > 14 && fieldName.substring(0,14).equals("tblAppendGrid_")) {
+						if (fieldName.indexOf("_",14) > 0) {
+							seq = Integer.parseInt(fieldName.substring(fieldName.indexOf("_",14)+1));
+							if (seq > map_detail_ct) {
+								map_detail_ct = seq;
+							}
+							grid.put(fieldName.substring(14),fieldValue);
+						}
+					}
+					 // out.println("fieldName: " + fieldName + " fieldValue:" + fieldValue + "<br>");
+				}
+			}
+			Iterator j = fileItems.iterator();
+			while ( j.hasNext () ) 
+			{
+				FileItem ufi = (FileItem)j.next();
+				if ( !ufi.isFormField () )  {
+					String fieldName = ufi.getFieldName();
+					String fileName = ufi.getName();
+					boolean isInMemory = ufi.isInMemory();
+					long sizeInBytes = ufi.getSize();
+					file = new File( filePath + file_type + "_" + customer + ".csv") ;
+					ufi.write( file ) ;
+					out.println("<h1>Uploaded File: " + fileName + "</h1>");
+				}
+			}
+			 
+		}catch(Exception ex) {
+			System.out.println(ex);
+		}
+			  
+		try {
+			PreparedStatement pst = null;
+			Connection con = null;
+			ResultSet rs = null;	
+			Class.forName(driver).newInstance();
+			con = DriverManager.getConnection(url,username,password);
+			
+			/* Insert company name if not exists */
+			qry = "SELECT customer_name FROM customer WHERE customer_name = ?";
+			pst = con.prepareStatement(qry);
+			pst.setString(1, customer); 
+			rs = pst.executeQuery();
+			if(!rs.next()) {
+				qry = "INSERT INTO customer (customer_name) VALUES (?)";
+				pst = con.prepareStatement(qry);
+				pst.setString(1, customer); 
+				pst.executeUpdate();
+			}
+
+			/* delete old map_detail records, if any */
+			try {
+				qry = "DELETE FROM map_detail WHERE map_id IN (SELECT map_id FROM map WHERE customer_name = ? AND file_type = ?)";
+				pst = con.prepareStatement(qry);
+				pst.setString(1, customer); 
+				pst.setString(2, file_type); 
+				rs = pst.executeQuery();
+			}
+			catch (SQLException ex)	{
+				/*  out.print("SQLException: "+ex.getMessage()); 
+				out.print("SQLState: " + ex.getSQLState());
+				out.print("VendorError: " + ex.getErrorCode()); */
+			}
+			
+			/* Upsert map */
+			try {
+				qry = "DELETE FROM map WHERE customer_name = ? AND file_type = ?";
+				pst = con.prepareStatement(qry);
+				pst.setString(1, customer); 
+				pst.setString(2, file_type); 
+				rs = pst.executeQuery();
+			}
+			catch (SQLException ex)
+			{
+				/*  out.print("SQLException: "+ex.getMessage()); 
+				out.print("SQLState: " + ex.getSQLState());
+				out.print("VendorError: " + ex.getErrorCode()); */
+			}
+			qry = "INSERT INTO map (customer_name, file_type, delimiter, has_header) VALUES (?,?,?,?)";
+			pst = con.prepareStatement(qry);
+			pst.setString(1, customer); 
+			pst.setString(2, file_type);
+			pst.setString(3, delimiter);  
+			pst.setInt(4, has_header);
+			pst.executeUpdate();
+			/* get map_id */
+			qry = "SELECT map_id FROM map WHERE customer_name = ? AND file_type = ?";
+			pst = con.prepareStatement(qry);
+			pst.setString(1, customer); 
+			pst.setString(2, file_type);
+			rs = pst.executeQuery();
+			
+			if(rs.next()) {
+				map_id = rs.getInt("map_id");
+				// out.println("map_id: " + map_id + "<br>");
+			}
+
+			/* add map_details for customer/file_type */
+			try {
+				for(int x = 1; x <= map_detail_ct; x = x+1) {
+					switch (grid.get("type_" + x).toString()) {
+						case "String":
+							qry = "INSERT INTO map_detail (map_id, seq, field_name, map_field, type, length) VALUES (?,?,?,?,?,?)";
+							break;
+						case "Number":
+							qry = "INSERT INTO map_detail (map_id, seq, field_name, map_field, type, Currency, decimal, grouping) VALUES (?,?,?,?,?,?,?,?)";
+							break;
+						case "Date":
+							qry = "INSERT INTO map_detail (map_id, seq, field_name, map_field, type, Format) VALUES (?,?,?,?,?,?)";
+							break;
+					}
+					pst = con.prepareStatement(qry);
+					pst.setInt(1, map_id); 
+					pst.setInt(2, x);
+					pst.setString(3, grid.get("fieldname_" + x).toString());  
+					pst.setString(4, grid.get(file_type + "_" + x).toString());
+					pst.setString(5, grid.get("type_" + x).toString());
+					switch (grid.get("type_" + x).toString()) {
+						case "String":
+							pst.setInt(6, Integer.parseInt(grid.get("length_" + x).toString()));
+							break;
+						case "Number":
+							pst.setString(6, grid.get("currency_" + x).toString());
+							pst.setString(7, grid.get("decimal_" + x).toString());
+							pst.setString(8, grid.get("grouping_" + x).toString());
+							break;
+						case "Date":
+							pst.setString(6, grid.get("format_" + x).toString());
+							break;
+					}
+					pst.executeUpdate();
+				}
+				// out.print("grid: " + grid.toString());
+				out.print("<input type='hidden' id='file_type' value='" + file_type + "' />");
+				out.print("<input type='hidden' id='customer_name' value='" + customer + "' />");
+				out.print("<p id='ajaxdata'>-</p>");
+			}
+		
+			catch (SQLException ex)	{
+				out.print("SQLException: "+ex.getMessage()); 
+				out.print("SQLState: " + ex.getSQLState());
+				out.print("VendorError: " + ex.getErrorCode()); 
+			}
+
+			rs.close();
+			pst.close();
+			con.close();
+
+		}
+		catch(ClassNotFoundException e){e.printStackTrace();}
+		catch (SQLException ex)
+		{
+			out.print("SQLException: "+ex.getMessage());
+			out.print("SQLState: " + ex.getSQLState());
+			out.print("VendorError: " + ex.getErrorCode());
+		}
+	}else{
+		out.println("<p>No file uploaded</p>"); 
+	}
+%>
+</body>
+</html>

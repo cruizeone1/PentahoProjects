@@ -1,0 +1,1469 @@
+base_url;StartDate;EndDate;DataType;sitecode;sitename;authorityname;sitetype;lat;lon;aqd_site_url;API_URL;result;response_code
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BQ4;Bexley 8 - Traffic(E slow - nearest BX7);Bexley;Kerbside;51.4568546604;0.1945463626;;;"﻿<?xml version=""1.0"" encoding=""utf-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id=""content"">
+      <p class=""heading1"">Request Error</p>
+      <p xmlns="""">The server encountered an error processing the request. Please see the <a rel=""help-page"" href=""http://api.erg.kcl.ac.uk/AirQuality/help"">service help page</a> for constructing valid requests to the service. The exception message is 'There is no row at position 0.'. See server logs for more details. The exception stack trace is: </p>
+      <p>   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ErgAPI.Service.SQLResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\SQLResource.cs:line 3194
+   at ErgAPI.Service.JSONResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\JSONResource.cs:line 357
+   at ErgAPI.Service.AirQuality.GetRawDataSiteJSON(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\AirQuality.cs:line 564
+   at SyncInvokeGetRawDataSiteJSON(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp; outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)</p>
+    </div>
+  </body>
+</html>";400
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BQ1;Bexley 8 - Traffic(W slow - nearest BX8);Bexley;Kerbside;51.4568546604;0.1945463626;;;"﻿<?xml version=""1.0"" encoding=""utf-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id=""content"">
+      <p class=""heading1"">Request Error</p>
+      <p xmlns="""">The server encountered an error processing the request. Please see the <a rel=""help-page"" href=""http://api.erg.kcl.ac.uk/AirQuality/help"">service help page</a> for constructing valid requests to the service. The exception message is 'There is no row at position 0.'. See server logs for more details. The exception stack trace is: </p>
+      <p>   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ErgAPI.Service.SQLResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\SQLResource.cs:line 3194
+   at ErgAPI.Service.JSONResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\JSONResource.cs:line 357
+   at ErgAPI.Service.AirQuality.GetRawDataSiteJSON(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\AirQuality.cs:line 564
+   at SyncInvokeGetRawDataSiteJSON(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp; outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)</p>
+    </div>
+  </body>
+</html>";400
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BQ3;Bexley 8 - Traffic(E fast);Bexley;Kerbside;51.4568546604;0.1945463626;;;"﻿<?xml version=""1.0"" encoding=""utf-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id=""content"">
+      <p class=""heading1"">Request Error</p>
+      <p xmlns="""">The server encountered an error processing the request. Please see the <a rel=""help-page"" href=""http://api.erg.kcl.ac.uk/AirQuality/help"">service help page</a> for constructing valid requests to the service. The exception message is 'There is no row at position 0.'. See server logs for more details. The exception stack trace is: </p>
+      <p>   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ErgAPI.Service.SQLResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\SQLResource.cs:line 3194
+   at ErgAPI.Service.JSONResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\JSONResource.cs:line 357
+   at ErgAPI.Service.AirQuality.GetRawDataSiteJSON(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\AirQuality.cs:line 564
+   at SyncInvokeGetRawDataSiteJSON(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp; outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)</p>
+    </div>
+  </body>
+</html>";400
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BQ2;Bexley 8 - Traffic(W fast);Bexley;Kerbside;51.4568546604;0.1945463626;;;"﻿<?xml version=""1.0"" encoding=""utf-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"">
+<html xmlns=""http://www.w3.org/1999/xhtml"">
+  <head>
+    <title>Request Error</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id=""content"">
+      <p class=""heading1"">Request Error</p>
+      <p xmlns="""">The server encountered an error processing the request. Please see the <a rel=""help-page"" href=""http://api.erg.kcl.ac.uk/AirQuality/help"">service help page</a> for constructing valid requests to the service. The exception message is 'There is no row at position 0.'. See server logs for more details. The exception stack trace is: </p>
+      <p>   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at ErgAPI.Service.SQLResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\SQLResource.cs:line 3194
+   at ErgAPI.Service.JSONResource.GetSiteTimeseriesDataNarrow(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\JSONResource.cs:line 357
+   at ErgAPI.Service.AirQuality.GetRawDataSiteJSON(String SiteCode, String StartDate, String EndDate) in c:\inetpub\wwwroot\api.erg.kcl.ac.uk\ErgAPI.Service\AirQuality.cs:line 564
+   at SyncInvokeGetRawDataSiteJSON(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp; outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)</p>
+    </div>
+  </body>
+</html>";400
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BT8;Brent - ARK Franklin Primary Academy;Brent;Roadside;51.5324054618;-0.2177189086;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BT1;Brent - Kingsbury;Brent;Suburban;51.589618;-0.275519;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BT7;Brent - St Marys Primary School;Brent;Urban Background;51.534718;-0.196664;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BT4;Brent - Ikea;Brent;Roadside;51.552476;-0.258089;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BT6;Brent - John Keble Primary School;Brent;Roadside;51.537799;-0.247793;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BY7;Bromley - Harwood Avenue;Bromley;Roadside;51.405546;0.018882;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BT5;Brent - Neasden Lane;Brent;Industrial;51.552656;-0.248774;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BY4;Bromley - Tweedy Rd;Bromley;Roadside;51.4038348108;0.0203902289;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BY5;Bromley - Biggin Hill;Bromley;Suburban;51.314562;0.042019;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KX4;Camden - Coopers Lane;Camden;Industrial;51.533238;-0.129594;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BY1;Bromley - Rent Office;Bromley;Urban Background;51.4132338948;0.0072147162;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;IM1;Camden - Holborn (Bee Midtown);Camden;Kerbside;51.5173675146;-0.1201947113;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BL0;Camden - Bloomsbury;Camden;Urban Background;51.522287;-0.125848;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CD4;Camden - St Martins College (NOX 1);Camden;Urban Background;51.518846;-0.12034;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CD9;Camden - Euston Road;Camden;Roadside;51.527975;-0.1287742;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CD1;Camden - Swiss Cottage;Camden;Kerbside;51.544219;-0.175284;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CD3;Camden - Shaftesbury Avenue;Camden;Roadside;51.515532;-0.127027;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CT2;City of London - Farringdon Street;City of London;Kerbside;51.5145253362;-0.1045156263;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CD5;Camden - St Martins College (NOX 2);Camden;Urban Background;51.518846;-0.12034;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CT3;City of London - Sir John Cass School;City of London;Urban Background;51.5138471784;-0.0777656818;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CT4;City of London - Beech Street;City of London;Roadside;51.5202252732;-0.0961060474;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CT6;City of London - Walbrook Wharf;City of London;Roadside;51.510499;-0.091634;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CT1;City of London - Senator House;City of London;Urban Background;51.511491;-0.095807;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR4;Croydon - George Street;Croydon;Roadside;51.374312;-0.096503;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CT8;City of London - Upper Thames Street;City of London;Roadside;51.5095436854;-0.087357198;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR8;Croydon - Norbury Manor;Croydon;Urban Background;51.410039;-0.127523;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR6;Croydon - Euston Road;Croydon;Suburban;51.378697897;-0.1137964033;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR2;Croydon - Purley Way;Croydon;Roadside;51.362638;-0.117952;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR5;Croydon - Norbury;Croydon;Kerbside;51.411349;-0.12311;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR3;Croydon - Thornton Heath;Croydon;Suburban;51.40401;-0.098814;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR9;Croydon - Park Lane;Croydon;Roadside;51.3739530635;-0.0967638468;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA2;Ealing - Acton Town Hall;Ealing;Roadside;51.506628;-0.267934;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CR7;Croydon - Purley Way A23;Croydon;Roadside;51.3622305655;-0.1176045074;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA0;Ealing - Acton Town Hall FDMS;Ealing;Roadside;51.506628;-0.267934;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;CY1;Crystal Palace - Crystal Palace Parade;Croydon;Roadside;51.424812;-0.075449;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA9;Ealing - Court Way;Ealing;Roadside;51.5225651213;-0.2649224148;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EG1;Ealing - Acton Town Hall (Partisol);Ealing;Roadside;51.5065947338;-0.267964378;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EI0;Ealing - Greenford;Ealing;Urban Background;51.5439296253;-0.352801776;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EI3;Ealing - Acton Vale ;Ealing;Urban Background;51.503852792;-0.2546681016;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA8;Ealing - Horn Lane;Ealing;Industrial;51.518948;-0.265617;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA1;Ealing - Ealing Town Hall;Ealing;Urban Background;51.5133230467;-0.3075290155;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA7;Ealing - Southall;Ealing;Urban Background;51.508549;-0.392179;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EA6;Ealing - Hanger Lane Gyratory;Ealing;Roadside;51.53085;-0.292488;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EI2;Ealing - Southall Railway;Ealing;Roadside;51.5058699784;-0.3802410315;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EN5;Enfield - Bowes Primary School;Enfield;Roadside;51.613865;-0.125338;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EI8;Ealing - Horn Lane TEOM;Ealing;Industrial;51.5189160349;-0.2656520524;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EN2;Enfield - Church Street;Enfield;Roadside;51.652436498;-0.0842246243;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EI7;Ealing - Southall FDMS;Ealing;Urban Background;51.5085164816;-0.3922084592;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EN7;Enfield - Prince of Wales School;Enfield;Urban Background;51.6686433473;-0.0220072056;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EI1;Ealing - Western Avenue;Ealing;Roadside;51.5236078191;-0.2655026318;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GN0;Greenwich - A206 Burrage Grove;Greenwich;Roadside;51.490532;0.074003;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EN1;Enfield - Bush Hill Park;Enfield;Suburban;51.6450367267;-0.0661800662;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GR4;Greenwich - Eltham;Greenwich;Suburban;51.45258;0.070766;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EN4;Enfield - Derby Road;Enfield;Roadside;51.614864007;-0.0507658364;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GB0;Greenwich - Falconwood FDMS;Bexley;Roadside;51.4563;0.085606;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;EN3;Enfield - Salisbury School;Enfield;Urban Background;51.6374794859;-0.0442461406;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GN6;Greenwich - John Harrison Way;Greenwich;Roadside;51.4937746696;0.0107796237;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GR7;Greenwich - Blackheath;Greenwich;Roadside;51.472504;-0.012381;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GN3;Greenwich - Plumstead High Street;Greenwich;Roadside;51.486957;0.095111;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GB6;Greenwich - Falconwood;Bexley;Roadside;51.4563;0.085606;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GN5;Greenwich - Trafalgar Road (Hoskins St);Greenwich;Roadside;51.4839072533;0.0004073969;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GN4;Greenwich - Fiveways Sidcup Rd A20;Greenwich;Roadside;51.4346627061;0.0642224672;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GR8;Greenwich - Woolwich Flyover;Greenwich;Roadside;51.486884;0.017901;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GN2;Greenwich - Millennium Village;Greenwich;Industrial;51.492571;0.017697;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HK6;Hackney - Old Street;Hackney;Roadside;51.526454;-0.08491;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GR5;Greenwich - Trafalgar Road;Greenwich;Roadside;51.4834490665;-0.0001455627;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HF2;Hammersmith and Fulham - Brook Green;Hammersmith and Fulham;Urban Background;51.4964961787;-0.2205029811;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GR9;Greenwich - Westhorne Avenue;Greenwich;Roadside;51.456357;0.040725;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HF4;Hammersmith and Fulham - Shepherds Bush;Hammersmith and Fulham;Roadside;51.5045625672;-0.224670007;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HK4;Hackney - Clapton;Hackney;Urban Background;51.558884;-0.056388;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HG3;Haringey - Bounds Green;Haringey;Roadside;51.6059499475;-0.1234411203;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HF1;Hammersmith and Fulham - Broadway;Hammersmith and Fulham;Roadside;51.4927663395;-0.2236013383;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HG2;Haringey - Priory Park;Haringey;Urban Background;51.586029;-0.126486;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HF3;Hammersmith and Fulham - Scrubs Lane;Hammersmith and Fulham;Kerbside;51.5308895141;-0.2370110054;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HR1;Harrow - Stanmore;Harrow;Urban Background;51.617327;-0.298775;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HG4;Haringey  - Priory Park South;Haringey;Urban Background;51.5839769008;-0.1254002785;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HV1;Havering - Rainham;Havering;Roadside;51.5207874593;0.2054607057;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HG1;Haringey - Haringey Town Hall;Haringey;Roadside;51.599302;-0.068218;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LH2;Heathrow Airport;Hillingdon;Industrial;51.4792338865;-0.4405307033;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HR2;Harrow - Pinner Road;Harrow;Roadside;51.588417;-0.362989;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HI2;Hillingdon - Hillingdon Hospital;Hillingdon;Roadside;51.526115;-0.459128;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HV2;Havering - Harold Hill;Havering;Suburban;51.6065992159;0.2253595583;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HI3;Hillingdon - Oxford Avenue;Hillingdon;Roadside;51.4811318391;-0.423760324;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HV3;Havering - Romford;Havering;Roadside;51.572976;0.179079;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS3;Hounslow - Brentford;Hounslow;Roadside;51.489321;-0.310002;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LH0;Hillingdon - Harlington;Hillingdon;Urban Background;51.48878;-0.441627;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS5;Hounslow - Brentford;Hounslow;Roadside;51.489398;-0.310081;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HI0;Hillingdon - Keats Way;Hillingdon;Suburban;51.496309;-0.460826;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS2;Hounslow - Cranford;Hounslow;Suburban;51.482982;-0.411895;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HI1;Hillingdon - South Ruislip;Hillingdon;Roadside;51.552264;-0.402779;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS7;Hounslow - Hatton Cross;Hounslow;Urban Background;51.463402;-0.427525;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS1;Hounslow - Brentford;Hounslow;Roadside;51.489321;-0.310002;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS8;Hounslow and Ealing - Gunnersbury Avenue;Hounslow;Roadside;51.5006762986;-0.2843831685;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS4;Hounslow - Chiswick High Road;Hounslow;Roadside;51.492507;-0.257252;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;IS5;Islington - Duncan Terrace;Islington;Roadside;51.5322658877;-0.1044131865;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS9;Hounslow - Feltham;Hounslow;Roadside;51.4473877655;-0.4087328372;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;IS2;Islington - Holloway Road;Islington;Roadside;51.555378;-0.116146;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HS6;Hounslow - Heston Road;Hounslow;Roadside;51.479129;-0.36476;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KC2;Kensington and Chelsea - Cromwell Road;Kensington and Chelsea;Roadside;51.49550391;-0.178809464;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;IS6;Islington - Arsenal;Islington;Urban Background;51.557895;-0.106989;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KG2;Kensington and Chelsea - Green Screen BG;Kensington and Chelsea;Urban Background;51.4894131144;-0.1936408862;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;IS4;Islington - Foxham Gardens;Islington;Urban Background;51.5600403385;-0.1316794252;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KC4;Kensington and Chelsea - Kings Road;Kensington and Chelsea;Roadside;51.48743685;-0.168397129;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;IS1;Islington - Upper Street;Islington;Urban Background;51.5407003386;-0.1032695782;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KC1;Kensington and Chelsea - North Ken;Kensington and Chelsea;Urban Background;51.5210467476;-0.2134921396;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KC5;Kensington and Chelsea - Earls Court Rd;Kensington and Chelsea;Kerbside;51.49019756;-0.190863311;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KF1;Kensington and Chelsea - North Ken FIDAS;Kensington and Chelsea;Urban Background;51.5210467476;-0.2134921396;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KG1;Kensington and Chelsea - Green Screen RS;Kensington and Chelsea;Roadside;51.4894131144;-0.1936408862;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KT1;Kingston - Chessington;Kingston;Suburban;51.3566466914;-0.316770842;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KC3;Kensington and Chelsea - Knightsbridge;Kensington and Chelsea;Roadside;51.49913951;-0.164337605;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KT2;Kingston - Town Centre;Kingston;Roadside;51.4144307605;-0.3017068221;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KC7;Kensington and Chelsea - North Ken FDMS;Kensington and Chelsea;Urban Background;51.5210467476;-0.2134921396;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KT6;Kingston Upon Thames - Kingston Vale;Kingston;Roadside;51.4355006648;-0.2570298938;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WE0;Kensington and Chelsea - Pembroke Road;Kensington and Chelsea;Urban Background;51.4942847452;-0.1993403509;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KT4;Kingston Upon Thames - Tolworth Broadway;Kingston;Roadside;51.379312;-0.281259;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;A30;Kingston - Kingston Bypass A3;Kingston;Roadside;51.3735533486;-0.2919698279;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LB4;Lambeth - Brixton Road;Lambeth;Kerbside;51.4641135412;-0.114581027;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KT5;Kingston Upon Thames - Cromwell Road;Kingston;Roadside;51.412308;-0.29658478;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LB3;Lambeth - Loughborough Junct;Lambeth;Urban Background;51.464866;-0.099161;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;KT3;Kingston Upon Thames - Sopwith Way;Kingston;Roadside;51.413691;-0.302269;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LB2;Lambeth - Vauxhall Cross;Lambeth;Roadside;51.4849123099;-0.1251737366;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LB5;Lambeth - Bondway Interchange;Lambeth;Industrial;51.485486774;-0.1245452348;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;HP1;Lewisham - Honor Oak Park;Lewisham;Urban Background;51.449672896;-0.0374153592;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LB1;Lambeth - Christchurch Road;Lambeth;Roadside;51.444249;-0.121731;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LW3;Lewisham - Mercury Way;Lewisham;Industrial;51.4811412185;-0.0456708567;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LB6;Lambeth - Streatham Green;Lambeth;Urban Background;51.4282131429;-0.1318686388;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TD5;London Teddington Bushy Park ;Richmond;Suburban;51.4252560361;-0.3456082909;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LW1;Lewisham - Catford;Lewisham;Urban Background;51.445468;-0.020266;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ME6;Merton - Esampler2;Merton;Industrial;;;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LW4;Lewisham - Loampit Vale;Lewisham;Roadside;51.4646910612;-0.0160682432;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ME1;Merton - Morden Civic Centre;Merton;Roadside;51.40105;-0.195929;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;LW2;Lewisham - New Cross;Lewisham;Roadside;51.474954;-0.039641;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ME7;Merton - Willow Lane Industrial Estate;Merton;Industrial;51.3943415638;-0.1651610446;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ME5;Merton - Esampler1;Merton;Industrial;;;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;NM1;Newham - Tant Avenue;Newham;Urban Background;51.514764;0.011989;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ME2;Merton - Merton Road;Merton;Roadside;51.4161384795;-0.192230805;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RB3;Redbridge - Fullwell Cross;Redbridge;Kerbside;51.593935;0.085516;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ME9;Merton - Morden Civic Centre 2;Merton;Roadside;51.40162;-0.19589212;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RB2;Redbridge - Ilford Broadway;Redbridge;Kerbside;51.5583461865;0.0699915095;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;NM2;Newham - Cam Road;Newham;Roadside;51.537598;-0.002138;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RB1;Redbridge - Perth Terrace;Redbridge;Urban Background;51.569221;0.081821;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;NM3;Newham - Wren Close;Newham;Urban Background;51.514727;0.014554;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RI2;Richmond Upon Thames - Barnes Wetlands;Richmond;Suburban;51.476168;-0.230427;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RB4;Redbridge - Gardner Close;Redbridge;Roadside;51.57661;0.030858;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RHG;Richmond Upon Thames - Chertsey Road;Richmond;Roadside;51.4531422511;-0.3412181381;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RB7;Redbridge - Ley Street;Redbridge;Urban Background;51.5694843315;0.0829074749;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;SK5;Southwark - A2 Old Kent Road;Southwark;Roadside;51.4804994936;-0.0595528933;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RB5;Redbridge - South Woodford;Redbridge;Roadside;51.595851;0.020087;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;SK7;Southwark - Heygate;Southwark;Urban Background;51.4929813788;-0.098537891;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;RI1;Richmond Upon Thames - Castelnau;Richmond;Roadside;51.480189;-0.237335;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;SK2;Southwark - Old Kent Road;Southwark;Roadside;51.4819456793;-0.0627176235;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;AZ99;Sk B Site;Enfield;Urban Background;50.9112219333;0.0556574727;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST8;Sutton - Beddington Lane ;Sutton;Industrial;51.3835652278;-0.1364178615;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;SK6;Southwark - Elephant and Castle;Southwark;Urban Background;51.4931557049;-0.1015270383;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST3;Sutton - Carshalton;Sutton;Suburban;51.365318;-0.165936;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;SK1;Southwark - Larcom Street;Southwark;Urban Background;51.490548;-0.09661;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST1;Sutton - Robin Hood School;Sutton;Roadside;51.365744;-0.195563;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;SK8;Southwark - Tower Bridge Road;Southwark;Roadside;51.5013906712;-0.0782034374;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST4;Sutton - Wallington;Sutton;Kerbside;51.3586596125;-0.1497239466;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST5;Sutton - Beddington Lane north;Sutton;Industrial;51.3892869045;-0.1416615248;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GF7;Tim Setup test;Bexley;Suburban;51.4525515605;0.0707291041;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST2;Sutton - North Cheam;Sutton;Urban Background;51.3771892138;-0.2220440774;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TH4;Tower Hamlets - Blackwall;Tower Hamlets;Roadside;51.5150461674;-0.0084184927;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST7;Sutton - Therapia Lane;Sutton;Industrial;51.3858391292;-0.1363398572;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TH6;Tower Hamlets - Millwall Park;Tower Hamlets;Urban Background;51.4891342634;-0.0129769309;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;ST6;Sutton - Worcester Park;Sutton;Kerbside;51.377923;-0.240414;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TH5;Tower Hamlets - Victoria Park;Tower Hamlets;Urban Background;51.5405194915;-0.0333073889;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TH3;Tower Hamlets - Bethnal Green;Tower Hamlets;Urban Background;51.526737;-0.053869;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WL4;Waltham Forest - Crooked Billet;Waltham Forest;Kerbside;51.6017184956;-0.0164982631;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TH2;Tower Hamlets - Mile End Road;Tower Hamlets;Roadside;51.5225294861;-0.0421550992;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WL5;Waltham Forest - Leyton;Waltham Forest;Roadside;51.5562576766;-0.0136296791;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;TH1;Tower Hamlets - Poplar;Tower Hamlets;Urban Background;51.510012;-0.019866;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WAA;Wandsworth - Battersea;Wandsworth;Roadside;51.4794395281;-0.1417869536;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WL3;Waltham Forest - Chingford;Waltham Forest;Roadside;51.6251928602;-0.0225973251;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA4;Wandsworth - High Street;Wandsworth;Roadside;51.4564354037;-0.1911574083;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WL1;Waltham Forest - Dawlish Road;Waltham Forest;Urban Background;51.562422;-0.004891;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA9;Wandsworth - Putney;Wandsworth;Urban Background;51.4650325059;-0.2158245809;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WL2;Waltham Forest - Mobile;Waltham Forest;Roadside;51.5647257034;0.0039959534;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA8;Wandsworth - Putney High Street Facade;Wandsworth;Roadside;51.4637206047;-0.2158901441;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA1;Wandsworth - Garratt Lane;Wandsworth;Roadside;51.4548722085;-0.1930039999;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA6;Wandsworth - Tooting;Wandsworth;Roadside;51.425284;-0.164452;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WAC;Wandsworth - Lavender Hill (Clapham Jct);Wandsworth;Roadside;51.4636903568;-0.166713486;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA2;Wandsworth - Wandsworth Town Hall;Wandsworth;Urban Background;51.456962;-0.191074;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA7;Wandsworth - Putney High Street;Wandsworth;Kerbside;51.463429;-0.215871;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WMA;Westminster - Buckingham Palace Road;Westminster;Roadside;51.4932327917;-0.147391757;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WA3;Wandsworth - Roehampton;Wandsworth;Rural;51.4569204685;-0.2455624905;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WM4;Westminster - Charing Cross Library;Westminster;Roadside;51.510205;-0.128177;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WAB;Wandsworth - Tooting High Street;Wandsworth;Roadside;51.429331;-0.166524;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;GV1;Westminster - Ebury Street (Grosvenor);Westminster;Roadside;51.493492;-0.149906;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;BP0;Westminster - Bridge Place;Westminster;Urban Background;51.4938505657;-0.143808451;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;MY1;Westminster - Marylebone Road;Westminster;Kerbside;51.52254;-0.15459;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503
+http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode=                              ;StartDate=2019-01-11                                                                 ;EndDate=2019-03-12                                                                   ;json                                                                                 ;WMC;Westminster - Cavendish Square;Westminster;Roadside;51.5168016452;-0.1456572694;;;"<!DOCTYPE HTML PUBLIC ""-//W3C//DTD HTML 4.01//EN""""http://www.w3.org/TR/html4/strict.dtd"">
+<HTML><HEAD><TITLE>Service Unavailable</TITLE>
+<META HTTP-EQUIV=""Content-Type"" Content=""text/html; charset=us-ascii""></HEAD>
+<BODY><h2>Service Unavailable</h2>
+<hr><p>HTTP Error 503. The service is unavailable.</p>
+</BODY></HTML>
+";503

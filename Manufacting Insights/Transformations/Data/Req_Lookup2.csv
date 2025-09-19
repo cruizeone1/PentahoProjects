@@ -1,0 +1,10 @@
+Meas_Desc,Maint_Req,Metric_desc
+F_Vy,Mount,Fltr_Velocity_Vertical
+F_Vx,Mount,Fltr_Velocity_Horizontal
+F_Vz,Bearing,Fltr_Velocity_Axial
+NF_Ax,Mount,No_Fltr_Amplitude_Horizontal
+NF_Ay,Mount,No_Fltr_Amplitude_Vertical
+NF_Az,Bearing,No_Fltr_Amplitude_Axial
+NF_Vx,Mount,No_Fltr_Velocity_Axial
+NF_Vy,Mount,No_Fltr_Velocity_Vertical
+NF_Vz,Bearing,No_Fltr_Velocity_Axial

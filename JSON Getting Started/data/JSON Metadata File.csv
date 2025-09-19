@@ -1,0 +1,25 @@
+Name,Path,Type,Format,Length,Precision,Currency,Decimal,Group,Trim type,Repeat
+MSRP,$..MSRP,Number,,,,,,,none,N
+ORDERNUMBER,$..ORDERNUMBER,Integer,,,,$,.,",",none,N
+STATE,$..STATE,String,,,,$,.,",",none,N
+ADDRESSLINE1,$..ADDRESSLINE1,String,,,,$,.,",",none,N
+PRODUCTCODE,$..PRODUCTCODE,String,,,,$,.,",",none,N
+COUNTRY,$..COUNTRY,String,,,,$,.,",",none,N
+ADDRESSLINE2,$..ADDRESSLINE2,String,,,,$,.,",",none,N
+ORDERLINENUMBER,$..ORDERLINENUMBER,Integer,,,,$,.,",",none,N
+CONTACTFIRSTNAME,$..CONTACTFIRSTNAME,String,,,,$,.,",",none,N
+TERRITORY,$..TERRITORY,String,,,,$,.,",",none,N
+PRICEEACH,$..PRICEEACH,Number,,,,$,.,",",none,N
+STATUS,$..STATUS,String,,,,$,.,",",none,N
+CONTACTLASTNAME,$..CONTACTLASTNAME,String,,,,$,.,",",none,N
+CUSTOMERNAME,$..CUSTOMERNAME,String,,,,$,.,",",none,N
+SALES,$..SALES,Number,#.#,15,,$,.,",",none,N
+PHONE,$..PHONE,String,,,,$,.,",",none,N
+QTR_ID,$..QTR_ID,Integer,,,,$,.,",",none,N
+POSTALCODE,$..POSTALCODE,String,,,,$,.,",",none,N
+QUANTITYORDERED,$..QUANTITYORDERED,Integer,,,,$,.,",",none,N
+PRODUCTLINE,$..PRODUCTLINE,String,,,,$,.,",",none,N
+CITY,$..CITY,String,,,,$,.,",",none,N
+ORDERDATE,$..ORDERDATE,Date,MM/dd/yyyy,,,$,.,",",none,N
+MONTH_ID,$..MONTH_ID,Integer,,,,$,.,",",none,N
+YEAR_ID,$..YEAR_ID,Integer,,,,$,.,",",none,N

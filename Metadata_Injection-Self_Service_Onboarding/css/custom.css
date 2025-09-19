@@ -1,0 +1,67 @@
+
+body{
+	padding:20px;
+}	
+
+h1,h2,h3,h4,
+.description{
+	margin-left:90px;
+}
+h1{
+	font-size: 26px;
+}
+.custom-form .form-item{
+	margin-top: 12px;
+}
+.custom-form .form-item label {
+  float: left;
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+}
+.custom-form .description{
+	color:#999;
+	font-size: 11px;
+}
+.custom-form .form-item select {
+  width: 195px;
+  font-size: 14px;
+}
+.custom-form .form-item textarea {
+  width: 250px;
+  margin-left: 70px;
+  font-size: 14px;
+}
+.custom-form .form-item input {
+  padding: 3px;
+  font-size: 14px;
+}
+.custom-form .form-submit {
+  margin-left: 90px;
+}
+.custom-form .form-type-radios .form-radios {
+ 	display: inline-block;
+}
+.custom-form .form-type-radios .form-type-radio{
+	margin-top:0;
+	margin-bottom: 5px;
+}
+.custom-form .form-type-radios .form-type-radio label {
+ 	width:auto;
+ 	float:none;
+}
+.custom-form .field-type-file .form-file{}
+.custom-form .field-type-file .form-submit{
+	margin:0;
+	font-size: 12px;
+	display: block;
+	margin-top:8px;
+}
+.custom-form .btn{
+	margin-top: 15px;
+	width:195px;
+}

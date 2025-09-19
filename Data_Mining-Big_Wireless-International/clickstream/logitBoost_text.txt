@@ -1,0 +1,1408 @@
+Title,Text
+Model: LogitBoost,=== Classifier model ===
+
+Scheme:   LogitBoost
+Relation: Sampled rows
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = RU : 1.9627906976744185
+country_code != RU : 1.997327852004111
+country_code is missing : 1.9969504447268107
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = RU : 1.0378554775802948
+country_code != RU : 1.1279990082026605
+country_code is missing : 1.1269734938597933
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+event_date = 2013-01-22 : 0.8021210301045184
+event_date != 2013-01-22 : 1.0226962403305542
+event_date is missing : 1.019745135505909
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = RU : 0.41121717776382444
+country_code != RU : 0.9593251290044189
+country_code is missing : 0.9515862592846738
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+event_date = 2013-01-14 : -0.18206944509090003
+event_date != 2013-01-14 : 0.8647333771402472
+event_date is missing : 0.8458849024876804
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = SA : -0.9781612212103313
+country_code != SA : 0.690715806533974
+country_code is missing : 0.6512050351859636
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : 0.1681011895567746
+Visited_Site > 0.5 : 1.0018167373452402
+Visited_Site is missing : 0.3866159260847301
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+event_date = 2013-01-22 : -1.769507531927751
+event_date != 2013-01-22 : 0.2547510018172202
+event_date is missing : 0.17461267181175488
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.2025960451906194
+Tweeted_Blog_Post > 0.5 : 1.0019584532062509
+Tweeted_Blog_Post is missing : -0.034937169579526944
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = RU : -1.6774429488364286
+country_code != RU : 0.1793666682360326
+country_code is missing : 0.09506388275329444
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 11
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.1240233714535302
+Visited_Site > 0.5 : 1.0012026288749518
+Visited_Site is missing : 0.03746295969487614
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 12
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.21205169092449544
+Commented_on_Blog > 0.5 : 1.0033015127574259
+Commented_on_Blog is missing : -0.016904200260041073
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 13
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.13590748269053032
+Watched_Video > 0.5 : 1.004340352290968
+Watched_Video is missing : 0.03245342163082167
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 14
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.1336697110326299
+Tweeted_Item > 0.5 : 1.0041639506305144
+Tweeted_Item is missing : 0.02858078117537874
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 15
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.08318946653118128
+Subscribed_to_Email > 0.5 : 1.0073086261625226
+Subscribed_to_Email is missing : 0.07543319050606283
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 16
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.14239662865074504
+Signup_Newsletter > 0.5 : 1.006016572765049
+Signup_Newsletter is missing : 0.03895185677696906
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 17
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.17438624304780742
+Signup_Free_Offer > 0.5 : 1.0064441625334601
+Signup_Free_Offer is missing : 0.032182521475904106
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 18
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.10279049554408619
+Tweeted_Blog_Post > 0.5 : 1.0045786116145508
+Tweeted_Blog_Post is missing : 0.033860946653736804
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 19
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.050886235202335796
+Visited_Site > 0.5 : 1.0011826531082264
+Visited_Site is missing : 0.09148362855519533
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 20
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.1584133332851547
+Commented_on_Blog > 0.5 : 1.0027617692897601
+Commented_on_Blog is missing : -0.002336671515338862
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 21
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.12895458398012585
+Completed_Lead_Form > 0.5 : 1.015467677457672
+Completed_Lead_Form is missing : 0.03343044488171283
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 22
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.13823955780889483
+Watched_Video > 0.5 : 1.0042175199839878
+Watched_Video is missing : 0.02933079154174613
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 23
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.131864665806649
+Tweeted_Item > 0.5 : 1.0040628639008005
+Tweeted_Item is missing : 0.02952833402819939
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 24
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.09084726518504246
+Subscribed_to_Email > 0.5 : 1.007454493858495
+Subscribed_to_Email is missing : 0.07612866237766362
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 25
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.13814319089630686
+Signup_Newsletter > 0.5 : 1.005846028668038
+Signup_Newsletter is missing : 0.041537785563568935
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 26
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.161549247338041
+Signup_Free_Offer > 0.5 : 1.0060447240073853
+Signup_Free_Offer is missing : 0.034953077652803206
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 27
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.10406919481061808
+Tweeted_Blog_Post > 0.5 : 1.0045546389254811
+Tweeted_Blog_Post is missing : 0.03625344775756525
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 28
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.052595747968448445
+Visited_Site > 0.5 : 1.0012441714534983
+Visited_Site is missing : 0.10130292599497154
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 29
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.1508031979238109
+Commented_on_Blog > 0.5 : 1.0026111997397034
+Commented_on_Blog is missing : 9.052017959276584E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 30
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.12293320814365892
+Completed_Lead_Form > 0.5 : 1.014794676038703
+Completed_Lead_Form is missing : 0.03721805525444802
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 31
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.13224133142162828
+Watched_Video > 0.5 : 1.0040125039597447
+Watched_Video is missing : 0.03273229622190054
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 32
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.13053644767812808
+Subscribed_to_Email > 0.5 : 1.0064846323214383
+Subscribed_to_Email is missing : 0.032965227449297974
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 33
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.08962804459105757
+Tweeted_Item > 0.5 : 1.0043949481497985
+Tweeted_Item is missing : 0.07876474331808195
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 34
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.13194967435677038
+Signup_Newsletter > 0.5 : 1.00550700814248
+Signup_Newsletter is missing : 0.04440545996759366
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 35
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.14871736893287743
+Signup_Free_Offer > 0.5 : 1.0055337471405559
+Signup_Free_Offer is missing : 0.03799600233897243
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 36
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = RS : -2.6157680863062436
+country_code != RS : 0.09140468388910847
+country_code is missing : 0.03868439564478202
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 37
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.13569517157198274
+Tweeted_Blog_Post > 0.5 : 1.0042455913165207
+Tweeted_Blog_Post is missing : 0.008615725284579233
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 38
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.06187600337864684
+Visited_Site > 0.5 : 1.0013787432040666
+Visited_Site is missing : 0.103485832246794
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 39
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.1458030780086615
+Commented_on_Blog > 0.5 : 1.0057932142962023
+Commented_on_Blog is missing : 0.008372366638253517
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 40
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.11220240460291475
+Completed_Lead_Form > 0.5 : 1.013089298769541
+Completed_Lead_Form is missing : 0.03902060377827767
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 41
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.12234549711571709
+Watched_Video > 0.5 : 1.0036950588678175
+Watched_Video is missing : 0.03530918469597115
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 42
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.12107221227913412
+Subscribed_to_Email > 0.5 : 1.005970799688724
+Subscribed_to_Email is missing : 0.03643719234888017
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 43
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.08773799443443032
+Tweeted_Item > 0.5 : 1.0040255032783438
+Tweeted_Item is missing : 0.07925729252906506
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 44
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.1297185886455351
+Signup_Newsletter > 0.5 : 1.0056949966608102
+Signup_Newsletter is missing : 0.04751333713967972
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 45
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.13156956005358544
+Signup_Free_Offer > 0.5 : 1.0050316628841955
+Signup_Free_Offer is missing : 0.043604510184627035
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 46
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.09403255093950018
+Tweeted_Blog_Post > 0.5 : 1.003893780214875
+Tweeted_Blog_Post is missing : 0.04287467580201256
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 47
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.05639288745439813
+Visited_Site > 0.5 : 1.0013027836357855
+Visited_Site is missing : 0.11512828845521322
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 48
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.1349688024708115
+Commented_on_Blog > 0.5 : 1.00504541251661
+Commented_on_Blog is missing : 0.011807510622674159
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 49
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.1037491846656738
+Completed_Lead_Form > 0.5 : 1.0115108439601421
+Completed_Lead_Form is missing : 0.0434532063734162
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 50
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.11444151560761921
+Watched_Video > 0.5 : 1.0032092022804446
+Watched_Video is missing : 0.03837042666220245
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 51
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.11897000510422931
+Tweeted_Item > 0.5 : 1.0031780813359814
+Tweeted_Item is missing : 0.03933423781493849
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 52
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.08054522309587239
+Subscribed_to_Email > 0.5 : 1.005774999390555
+Subscribed_to_Email is missing : 0.08177573067970842
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 53
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.12062202442761732
+Signup_Newsletter > 0.5 : 1.0048173325712568
+Signup_Newsletter is missing : 0.04960550334776782
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 54
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.12109290273742924
+Signup_Free_Offer > 0.5 : 1.0042156452263133
+Signup_Free_Offer is missing : 0.0466418527791302
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 55
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+registration_date <= 1.3625136E12 : -0.6432340218416197
+registration_date > 1.3625136E12 : 0.317305708521919
+registration_date is missing : 0.14334691583263626
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 56
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = AR : -2.263452940085902
+country_code != AR : 0.04619671379645628
+country_code is missing : -0.01719165483595889
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 57
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+flag_optin_email_marketing <= 0.5 : -0.3583182118984665
+flag_optin_email_marketing > 0.5 : 0.4529406295741446
+flag_optin_email_marketing is missing : 0.019498493642412365
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 58
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.1544057185427071
+Visited_Site > 0.5 : 1.0016168285919114
+Visited_Site is missing : 0.0035267473813453925
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 59
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = LV : -2.4190248667665095
+country_code != LV : 0.11296668574262364
+country_code is missing : 0.0487550067985461
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 60
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = CL : -2.4416526500375793
+country_code != CL : 0.09650121447444229
+country_code is missing : 0.03163256956811443
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 61
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = LK : -2.378932286162247
+country_code != LK : 0.0945270279350964
+country_code is missing : 0.025400899167617688
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 62
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+event_hour = 01 : -1.4892204066049561
+event_hour != 01 : 0.14315473168777804
+event_hour is missing : 0.02523801749372601
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 63
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = PS : -2.444608840794957
+country_code != PS : 0.11355958354107629
+country_code is missing : 0.041723695915111346
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 64
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = BR : -2.5433968446627873
+country_code != BR : 0.09873778869605493
+country_code is missing : 0.03348389797369276
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 65
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = ZW : -2.5586757610948663
+country_code != ZW : 0.09116697646293159
+country_code is missing : 0.021121584552095216
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 66
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = AF : -2.362876334583587
+country_code != AF : 0.09993548160452477
+country_code is missing : 0.028600289934549442
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 67
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+event_hour = 00 : -1.570811715978428
+event_hour != 00 : 0.13694192061322868
+event_hour is missing : 0.029905864207815294
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 68
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+country_code = SB : -2.4494911933830052
+country_code != SB : 0.11568526529375409
+country_code is missing : 0.046906912699349955
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 69
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.10297961268924609
+Completed_Lead_Form > 0.5 : 1.0148874357150153
+Completed_Lead_Form is missing : 0.022389044614857898
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 70
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.0937281821754212
+Tweeted_Blog_Post > 0.5 : 1.0053248052870776
+Tweeted_Blog_Post is missing : 0.06143253637604454
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 71
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.057265218013774544
+Subscribed_to_Email > 0.5 : 1.0068099427993258
+Subscribed_to_Email is missing : 0.060406979983934704
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 72
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.07148929169899856
+Watched_Video > 0.5 : 1.0062949924967024
+Watched_Video is missing : 0.05060873939938928
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 73
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.08093262413145055
+Commented_on_Blog > 0.5 : 1.0075251566335859
+Commented_on_Blog is missing : 0.050919028805462126
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 74
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.08339055155072653
+Tweeted_Item > 0.5 : 1.0044463934286492
+Tweeted_Item is missing : 0.042095079879012426
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 75
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.06758292316299289
+Signup_Newsletter > 0.5 : 1.0045483765261332
+Signup_Newsletter is missing : 0.051763023999579424
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 76
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.08314787613789089
+Signup_Free_Offer > 0.5 : 1.0073510798857788
+Signup_Free_Offer is missing : 0.0501880913043179
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 77
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.08276085162028188
+Visited_Site > 0.5 : 1.0026935399234516
+Visited_Site is missing : 0.057660904654708585
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 78
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.058788272548394235
+Tweeted_Blog_Post > 0.5 : 1.003753519718574
+Tweeted_Blog_Post is missing : 0.05168747439296052
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 79
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.08853629671515734
+Completed_Lead_Form > 0.5 : 1.0107991858922587
+Completed_Lead_Form is missing : 0.035922416869728614
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 80
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.049612155662497874
+Subscribed_to_Email > 0.5 : 1.0046357130387524
+Subscribed_to_Email is missing : 0.06027547716366749
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 81
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.06269456237789661
+Watched_Video > 0.5 : 1.0042145891118028
+Watched_Video is missing : 0.04951673868888865
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 82
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.07176630696829953
+Commented_on_Blog > 0.5 : 1.00499329140399
+Commented_on_Blog is missing : 0.04813490644992834
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 83
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.07644344339767466
+Tweeted_Item > 0.5 : 1.0028792138835205
+Tweeted_Item is missing : 0.03786557639773293
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 84
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.07120408231987581
+Signup_Newsletter > 0.5 : 1.0029716849582266
+Signup_Newsletter is missing : 0.041294322159206386
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 85
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.07518745479884334
+Signup_Free_Offer > 0.5 : 1.0047530849456856
+Signup_Free_Offer is missing : 0.04802494053237505
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 86
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.07323952925488027
+Visited_Site > 0.5 : 1.0017264819783742
+Visited_Site is missing : 0.05659882437102537
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 87
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.06438659227971211
+Tweeted_Blog_Post > 0.5 : 1.002442858111944
+Tweeted_Blog_Post is missing : 0.042219389518511515
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 88
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.06648542661985297
+Completed_Lead_Form > 0.5 : 1.0068707403512929
+Completed_Lead_Form is missing : 0.046391124896183425
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 89
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.05428405518781744
+Subscribed_to_Email > 0.5 : 1.00298855993095
+Subscribed_to_Email is missing : 0.051812165306174614
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 90
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.06950175962753377
+Watched_Video > 0.5 : 1.002704255338171
+Watched_Video is missing : 0.03946747079402899
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 91
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.06750986917394929
+Commented_on_Blog > 0.5 : 1.0032168123228016
+Commented_on_Blog is missing : 0.047826613405946364
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 92
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Item <= 0.5 : -0.06967932491867894
+Tweeted_Item > 0.5 : 1.0018217467010206
+Tweeted_Item is missing : 0.03967415778219352
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 93
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Newsletter <= 0.5 : -0.05899731725520682
+Signup_Newsletter > 0.5 : 1.0018776285104394
+Signup_Newsletter is missing : 0.04788581318714499
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 94
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Signup_Free_Offer <= 0.5 : -0.06548185565144025
+Signup_Free_Offer > 0.5 : 1.002958390668963
+Signup_Free_Offer is missing : 0.05032047633101782
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 95
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Visited_Site <= 0.5 : -0.07803070317622267
+Visited_Site > 0.5 : 1.0010652530979796
+Visited_Site is missing : 0.04669758103670904
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 96
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Tweeted_Blog_Post <= 0.5 : -0.054659347713603194
+Tweeted_Blog_Post > 0.5 : 1.0015696153885547
+Tweeted_Blog_Post is missing : 0.0448547323149862
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 97
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Completed_Lead_Form <= 0.5 : -0.07401735128357159
+Completed_Lead_Form > 0.5 : 1.0042539728497686
+Completed_Lead_Form is missing : 0.03587297192622013
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 98
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Subscribed_to_Email <= 0.5 : -0.041293761800102
+Subscribed_to_Email > 0.5 : 1.0018823479555754
+Subscribed_to_Email is missing : 0.0614615330935097
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 99
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Watched_Video <= 0.5 : -0.06712824845496064
+Watched_Video > 0.5 : 1.0016602414058733
+Watched_Video is missing : 0.03731664740841622
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 100
+	Class 1 (Added_Item_To_Cart=0)
+
+Decision Stump
+
+Classifications
+
+Commented_on_Blog <= 0.5 : -0.06727158541580766
+Commented_on_Blog > 0.5 : 1.0019828440888663
+Commented_on_Blog is missing : 0.044145161022159575
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 100

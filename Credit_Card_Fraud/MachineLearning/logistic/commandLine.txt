@@ -1,0 +1,18 @@
+# Build logistic regression on training data and save model (local file system, local execution)
+spark-submit --master local[*] --class org.pentaho.dm.spark.Logistic --jars libs/commons-csv-1.1.jar,libs/spark-csv_2.10-1.5.0.jar libs/sparkDemo.jar -training file:/home/zeus/Documents/logistic/data/data.csv -save file:/home/zeus/Documents/logistic/lr.mllib
+
+
+# Load saved model and predict test data (local file system, local execution)
+spark-submit --master local[*] --class org.pentaho.dm.spark.Logistic --jars libs/commons-csv-1.1.jar,libs/spark-csv_2.10-1.5.0.jar libs/sparkDemo.jar -test file:/home/zeus/Documents/logistic/data/data_live.csv -load file:/home/zeus/Documents/logistic/lr.mllib -scored-out file:/home/zeus/Documents/logistic/scored_out
+
+# Build logistic regression on training data and save model (HDFS, spark cluster execution)
+spark-submit --master spark://172.16.196.140:7077 --class org.pentaho.dm.spark.Logistic --jars libs/commons-csv-1.1.jar,libs/spark-csv_2.10-1.5.0.jar libs/sparkDemo.jar -training hdfs://0.0.0.0:8020/user/zeus/data/data.csv -save hdfs://0.0.0.0:8020/user/zeus/lr.mllib
+
+# Load saved model and predict test data (HDFS, spark cluster execution)
+spark-submit --master spark://172.16.196.140:7077 --class org.pentaho.dm.spark.Logistic --jars libs/commons-csv-1.1.jar,libs/spark-csv_2.10-1.5.0.jar libs/sparkDemo.jar -test hdfs://0.0.0.0:8020/user/zeus/data/data_live.csv -load hdfs://0.0.0.0:8020/user/zeus/lr.mllib -scored-out hdfs://0.0.0.0:8020/user/zeus/scored_out
+
+# yarn execution
+spark-submit --master yarn-cluster --class org.pentaho.dm.spark.Logistic --jars libs/commons-csv-1.1.jar,libs/spark-csv_2.10-1.5.0.jar libs/sparkDemo.jar -training hdfs://0.0.0.0:8020/user/zeus/data/data.csv -save hdfs://0.0.0.0:8020/user/zeus/lr.mllib
+
+
+

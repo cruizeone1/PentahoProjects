@@ -1,0 +1,49 @@
+CLASS,PRODUCTCODE,PRODUCTNAME,PRODUCTLINE,PRODUCTSCALE,PRODUCTVENDOR,QUANTITYINSTOCK,BUYPRICE,MSRP
+1,S10_1678,Rubber Vibration Mount-S345,Mount,NULL,HCM Parts,79,100,200
+2,S10_1949,Rubber Vibration Mount-S345,Mount,NULL,HCM Parts,73,100,200
+3,S10_2016,Rubber Vibration Mount-S345,Mount,NULL,MFG ,66,150,300
+4,S10_4698,Rubber Vibration Mount-S346,Mount,NULL,Conveyors 24 ,32,150,300
+5,S10_4757,Rubber Vibration Mount-S347,Mount,NULL,FRP Inc,67,200,400
+6,S10_4962,Rubber Vibration Mount-S345,Mount,NULL,HCM Parts,68,250,500
+1,S12_1099,Bearing Assembly-V342,Bearing,NULL,HCM Parts,36,250,500
+2,S12_1108,Bearing Assembly-V343,Bearing,NULL,HCM Parts,15,250,500
+3,S12_1666,Bearing Assembly-V344,Bearing,NULL,MFG ,97,250,500
+4,S12_2823,Bearing Assembly-V345,Bearing,NULL,Conveyors 24 ,6,350,700
+5,S12_3148,Bearing Assembly-V346,Bearing,NULL,FRP Inc,23,400,800
+6,S12_3380,Bearing Assembly-V347,Bearing,NULL,Dave and Sons Factory Parts,49,400,800
+1,S18_1097,Gearbox Assembly-2353,Gearbox,NULL,FRP Inc,75,500,100
+2,S18_1129,Gearbox Assembly-2353,Gearbox,NULL,Dave and Sons Factory Parts,93,500,100
+3,S18_1342,Gearbox Assembly-2353,Gearbox,NULL,Conveyors 24 ,35,500,100
+4,S18_1367,Gearbox Assembly-2353,Gearbox,NULL,FRP Inc,42,500,100
+5,S18_1589,Gearbox Assembly-2353,Gearbox,NULL,Dave and Sons Factory Parts,30,500,100
+6,S18_1662,Gearbox Assembly-2354,Gearbox,NULL,HCM Parts,24,500,100
+1,S18_1749,Gearbox Assembly-2355,Gearbox,NULL,HCM Parts,26,500,100
+2,S18_1889,Gearbox Assembly-2356,Gearbox,NULL,Conveyors 24 ,72,500,100
+3,S18_1984,Gearbox Assembly-2357,Gearbox,NULL,FRP Inc,24,500,100
+4,S18_2238,Gearbox Assembly-2358,Gearbox,NULL,Dave and Sons Factory Parts,0,500,100
+5,S18_2248,Gearbox Assembly-2359,Gearbox,NULL,HCM Parts,58,500,100
+6,S18_2319,Gearbox Assembly-2360,Gearbox,NULL,HCM Parts,54,600,120
+1,S24_1046,Chainlink Pulley-18ft,Pulley,NULL,MFG ,3,215,430
+2,S24_1444,Chainlink Pulley-18ft,Pulley,NULL,Conveyors 24 ,97,225,450
+3,S24_1578,Chainlink Pulley-18ft,Pulley,NULL,FRP Inc,27,240,480
+4,S24_1628,Chainlink Pulley-18ft,Pulley,NULL,Dave and Sons Factory Parts,32,265,530
+5,S24_1785,Chainlink Pulley-18ft,Pulley,NULL,MFG ,15,315,630
+6,S24_1937,Chainlink Pulley-20ft,Pulley,NULL,Conveyors 24 ,98,365,730
+1,S32_1268,2Ply Conveyor Belt,Belt,NULL,FRP Inc,41,100,200
+2,S32_1374,2Ply Conveyor Belt,Belt,NULL,Dave and Sons Factory Parts,74,100,200
+3,S32_2206,2Ply Conveyor Belt,Belt,NULL,MFG ,1,100,200
+4,S32_2509,3Ply Conveyor Belt,Belt,NULL,Conveyors 24 ,4,100,200
+5,S32_3207,3Ply Conveyor Belt,Belt,NULL,FRP Inc,6,100,200
+6,S32_3522,3Ply Conveyor Belt,Belt,NULL,Dave and Sons Factory Parts,41,100,200
+1,S50_1341,Motor-V235,Motor,NULL,Conveyors 24 ,45,100,200
+2,S50_1392,Motor-V236,Motor,NULL,FRP Inc,0,100,200
+3,S50_1514,Motor-V237,Motor,NULL,Dave and Sons Factory Parts,82,100,200
+4,S50_4713,Motor-V238,Motor,NULL,MFG ,10,100,200
+5,S50_4713,Motor-V238,Motor,NULL,MFG ,10,100,200
+6,S50_4713,Motor-V238,Motor,NULL,MFG ,10,100,200
+1,S700_1938,Aluminium Bore,Roller,NULL,Dave and Sons Factory Parts,99,100,200
+2,S700_2466,Rubber Bore,Roller,NULL,HCM Parts,8,100,200
+3,S700_2610,Rubber Bore,Roller,NULL,MFG ,41,100,200
+4,S700_2824,Rubber Bore,Roller,NULL,Conveyors 24 ,74,100,200
+5,S700_2834,Rubber Bore,Roller,NULL,FRP Inc,1,100,200
+6,S700_3167,Rubber Bore,Roller,NULL,Dave and Sons Factory Parts,4,100,200

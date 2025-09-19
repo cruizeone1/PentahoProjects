@@ -1,0 +1,21 @@
+Mount Point,Data Compression, Log Compression, Project Quota, Data Synchronization, ReadOnly, Deduplication,Install Date,Array_ID,DataCenter,Over_Subscription,Flash,10k,7.2k
+/export/opt1,tz4,off,None,Always,off,Target-based ,9/1/2017,A_001,NC,125,60,30,10
+/export/opt2,zfs,off,None,Always,off,Target-based ,9/10/2017,A_002,CA,100,60,30,10
+/export/opt3,tz4,off,None,Always,off,Source-based,8/6/2017,A_003,MI,100,60,30,10
+/export/opt4,tz4,off,None,Always,off,off,9/1/2017,A_004,NC,100,60,30,10
+/export/opt5,tz4,off,None,Always,off,off,9/10/2017,A_005,CA,100,60,30,10
+/export/opt6,tz4,off,None,Always,off,off,8/6/2017,A_006,MI,100,60,30,10
+/export/opt7,tz4,off,None,Always,off,off,9/1/2017,A_007,NC,100,60,30,10
+/export/opt8,tz4,off,None,Always,off,off,9/10/2017,A_008,CA,100,60,30,10
+/export/opt9,tz4,off,None,Always,off,off,8/6/2017,A_009,MI,100,60,30,10
+/export/opt10,tz4,off,None,Always,off,off,9/1/2017,A_010,NC,100,70,25,5
+/export/opt11,tz4,off,None,Always,off,off,9/10/2017,A_011,CA,100,70,25,5
+/export/opt12,tz4,off,None,Always,off,off,8/6/2017,A_012,MI,100,70,25,5
+/export/opt13,tz4,off,None,Always,off,off,9/1/2017,A_013,NC,100,70,25,5
+/export/opt14,tz4,off,None,Always,off,off,9/10/2017,A_014,NC,100,70,25,5
+/export/opt15,tz4,off,None,Always,off,off,8/6/2017,A_015,CA,100,40,40,20
+/export/opt16,tz4,off,None,Always,off,off,9/1/2017,A_016,MI,100,40,40,20
+/export/opt17,tz4,off,None,Always,off,Target-based ,9/10/2017,A_017,NC,110,40,40,20
+/export/opt18,tz5,off,None,Always,off,Source-based,8/6/2017,A_018,NC,110,40,40,20
+/export/opt19,zfs,off,None,Always,off,Source-based,6/1/2017,A_019,CA,125,20,40,40
+/export/opt20,zfs,off,None,Always,off,Source-based,6/10/2017,A_020,MI,125,20,40,40

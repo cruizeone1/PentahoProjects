@@ -1,0 +1,1647 @@
+/**
+ * Project Name:    Finance Demo
+ * Project Class:   .fsd
+ *
+ * Summary:
+ *
+ *    0. Fonts
+ *    1. General Styles
+ *        - 1.1. Buttons
+ *    2. Header
+ *        - 2.1. Logo
+ *        - 2.2. Navigation
+ *        - 2.3. Date Selector
+ *    3. Main
+ *    4. Sidebar
+ *        - 4.1. Toggle Button
+ *        - 4.2. Sidebar Content
+ *        - 4.3. Dashboard Filters Section
+ *        - 4.4. SDR Section
+ *        - 4.5. Filters
+ *        - 4.6. Table Info
+ *        - 4.7. Locations Table
+ *        - 4.8. Tooltips
+ *        - 4.9. Date Selectors
+ *    5. Content
+ *        - 5.1. Map
+ *        - 5.2. Footer
+ *        - 5.3. Map Gradient bar
+ */
+
+
+
+
+
+/* ==========================================================================
+  0. Fonts
+  ========================================================================== */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src:  local('Open Sans Light'), 
+        local('OpenSans-Light'),
+        /* CE */
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-light.eot') format('embedded-opentype'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-light.woff') format('woff'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-light.ttf') format('truetype'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-light.svg#OpenSansLight') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:  local('Open Sans'), 
+        local('OpenSans'),
+        /* CE */
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-regular.eot') format('embedded-opentype'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-regular.woff') format('woff'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-regular.ttf') format('truetype'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-regular.svg#OpenSansRegular') format('svg');
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:  local('Open Sans'), 
+        local('OpenSans'),
+        /* CE */
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-bold.eot') format('embedded-opentype'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-bold.woff') format('woff'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-bold.ttf') format('truetype'),
+        url('../../../../system/common-ui/resources/themes/crystal/opensans-bold.svg#OpenSansBold') format('svg');
+}
+
+
+
+
+
+/* ==========================================================================
+  1. General Styles
+  ========================================================================== */
+  
+html, body { 
+    height: 100%;
+    font-family: 'Open Sans', Arial, sans-serif !important;
+}
+
+.fsd .wrapper {
+    height: 100%;
+    min-width: 1280px;
+    
+    font-weight: 400;
+    
+    overflow: hidden;
+}
+
+strong { font-weight: 700; }
+
+
+
+
+
+/* 1.1. Buttons
+  ========================================================================== */
+  
+.fsd .default-button button,
+.fsd .default-button button:link,
+.fsd .default-button button:visited,
+.fsd .default-button button:active,
+.fsd .default-button button:focus,
+
+.fsd button.buttonComponent,
+.fsd button.buttonComponent:link,
+.fsd button.buttonComponent:visited,
+.fsd button.buttonComponent:active,
+.fsd button.buttonComponent:focus{
+    width: 100%;
+    
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    
+    display: block;
+    padding: 5px 15px;
+    margin: 15px 0;
+    border: 0 none;
+    
+    color: #FFF;
+    background-color: #005DA6;
+    
+    transition: all .3s ease-in-out;
+}
+
+.fsd .default-button button:hover,
+.fsd .default-button button:hover:active,
+.fsd button.buttonComponent:hover,
+.fsd button.buttonComponent:hover:active{
+    background-color: #0F2B5B;
+}
+
+.fsd .default-button button:focus {
+    outline: 0 none;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+  2. Header
+  ========================================================================== */
+
+.fsd .header {
+    padding: 0 15px;
+    
+    background: #003A70;
+}
+
+
+
+
+
+/* 2.1. Logo
+  ========================================================================== */
+  
+.fsd .headerLogo {
+    height: 40px;
+    
+    background-image: url(../img/mortgage-firm-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+  
+.no-svg .fsd .headerLogo {
+    background-image: url(../img/mortgage-firm-logo.png);
+}
+
+
+
+
+
+/* 2.2. Navigation
+  ========================================================================== */
+
+.fsd .headerNavigationObj > div {
+    width: 300px;
+    
+    clear: both;
+    
+    margin: 0 auto;
+}
+
+.fsd .headerNavigationObj .pentaho-toggle-button {
+    width: 80px;
+    
+    display: block;
+    float: left;
+    position: relative;
+    
+    margin: 0 10px;
+}
+
+.fsd .headerNavigationObj .pentaho-toggle-button button,
+.fsd .headerNavigationObj .pentaho-toggle-button button:link,
+.fsd .headerNavigationObj .pentaho-toggle-button button:visited,
+.fsd .headerNavigationObj .pentaho-toggle-button button:hover,
+.fsd .headerNavigationObj .pentaho-toggle-button button:active,
+.fsd .headerNavigationObj .pentaho-toggle-button button:focus {
+    width: 100%;
+    
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+    
+    border: 0 none;
+    margin: 0;
+    padding: 10px 0;
+    outline: 0 none;
+    
+    color: #005DA6;
+    background: none;
+    
+    transition: color .3s ease-in-out;
+}
+
+.fsd .headerNavigationObj .pentaho-toggle-button button:hover,
+.fsd .headerNavigationObj .pentaho-toggle-button button:active,
+.fsd .headerNavigationObj .pentaho-toggle-button.pentaho-toggle-button-down button {
+    color: #FFFFFF;
+}
+
+.fsd .headerNavigationObj .pentaho-toggle-button:before {
+    width: 100%;
+    height: 0;
+    
+    content: '';
+    position: absolute;
+    
+    background: #FFFFFF;
+    
+    top: 0;
+    left: 0;
+    
+    transition: height .3s ease-in-out;
+}
+
+.fsd .headerNavigationObj .pentaho-toggle-button.pentaho-toggle-button-down:before {
+    height: 5px;
+}
+
+
+
+
+
+/* 2.3. Date Selector
+  ========================================================================== */
+
+.fsd .headerDateSelectorObj .custom-date-block .date-display {
+    border: 0 none;
+    padding: 10px 40px 10px 0;
+    
+    text-align: right;
+    color: #FFFFFF;
+    
+    background-color: transparent;
+    background-image: url(../img/calendar-icon.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.no-svg .fsd .headerDateSelectorObj .custom-date-block .date-display {
+    background-image: url(../img/calendar-icon.png);
+}
+
+.fsd .headerDateSelectorObj .custom-date-block .date-display:before {
+    display: none;
+}
+  
+.fsd .headerDateSelectorObj .calendar-dialog {
+    z-index: 1020;
+}
+
+
+
+
+
+/* ==========================================================================
+  3. Main
+  ========================================================================== */
+
+.fsd .main {
+    height: calc(100% - 40px); /* leave 40px for the header */
+}
+
+
+
+
+
+/* ==========================================================================
+  4. Sidebar
+  ========================================================================== */
+
+.fsd .sidebar {
+    width: 501px;
+    height: 100%;
+    
+    margin-left: -480px; /* move sidebar to the left, but leave toggle button visible */
+    
+    background: #F4F4F4;
+    
+    transition: margin .3s ease-in-out;
+}
+
+.fsd .sidebarContent {
+    width:  480px;
+    height: 100%;
+}
+
+.fsd .visible-sidebar .sidebar {
+    margin-left: 0;
+}
+
+
+
+
+
+/* 4.1. Toggle Button
+  ========================================================================== */
+  
+.fsd .sidebarToggleButton {
+    width: 21px;
+    height: 100%;
+    
+    border-left: 1px solid #FCFCFC;
+}
+  
+.fsd .sidebarToggleButton button,
+.fsd .sidebarToggleButton button:link,
+.fsd .sidebarToggleButton button:visited,
+.fsd .sidebarToggleButton button:hover,
+.fsd .sidebarToggleButton button:active,
+.fsd .sidebarToggleButton button:focus {
+    width:  20px;
+    height: 100%;
+    
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    outline: 0 none;
+    
+    background-color: #F4F4F4;
+    background-image: url(../img/toggle-button-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    
+    transition: background-color .3s ease-in-out;
+}
+
+.no-svg .fsd .sidebarToggleButton button,
+.no-svg .fsd .sidebarToggleButton button:link,
+.no-svg .fsd .sidebarToggleButton button:visited,
+.no-svg .fsd .sidebarToggleButton button:hover,
+.no-svg .fsd .sidebarToggleButton button:active,
+.no-svg .fsd .sidebarToggleButton button:focu {
+    background-image: url(../img/toggle-button-icon.png);
+}
+  
+.fsd .visible-sidebar .sidebarToggleButton button,
+.fsd .visible-sidebar .sidebarToggleButton button:link,
+.fsd .visible-sidebar .sidebarToggleButton button:visited,
+.fsd .visible-sidebar .sidebarToggleButton button:hover,
+.fsd .visible-sidebar .sidebarToggleButton button:active,
+.fsd .visible-sidebar .sidebarToggleButton button:focus {
+    background-position: center left;
+}
+
+.fsd .sidebarToggleButton button:hover {
+    background-color: #EAEAEA;
+}
+
+.fsd .sidebarToggleButton button:active {
+    background-color: #E0E0E0;
+}
+
+
+
+
+
+/* 4.2. Sidebar Content
+  ========================================================================== */
+  
+.fsd .sidebarContent {
+    width: 480px;
+    height: 100%;
+    
+    overflow: hidden;
+}
+  
+.fsd .sidebarContentInner {
+    width: 960px; /* twice the parent width, so it can host two sections side-by-side */
+    height: 100%;
+    position: relative;
+    
+    left: 0;
+    
+    transition: all .3s ease-in-out;
+}
+
+.fsd .sidebarContent.sdr-visible .sidebarContentInner {
+    left: -480px; /* inner content sidebar moves half of the content width to the left */
+}
+
+.fsd .sidebarSection {
+    height: 100%;
+    width: 480px;
+    
+    padding: 0 15px;
+}
+
+
+
+
+
+/* 4.3. Dashboard Filters Section
+  ========================================================================== */
+
+.fsd .sidebarSection.dashboardFiltersSection {
+    height: 100%;
+    
+    padding: 0;
+    padding-bottom: 70px;
+    
+    position: relative;
+}
+
+.fsd .sidebarSection.dashboardFiltersSection .sectionInner {
+    height: 100%;
+    
+    padding: 0 15px;
+    
+    overflow-y: auto;
+}
+
+.fsd .showSDRButton {
+    width: 480px;
+    
+    position: absolute;
+    
+    bottom: 0;
+    
+    margin: 0;
+    border-top: 1px solid #FCFCFC;
+}
+
+.fsd .info-marker {
+    display: inline-block;
+    
+    border-radius: 2px;
+    padding: 0 8px;
+    margin-left: 10px;
+    
+    box-shadow: 0px 0px 5px rgba(255,255,255,0.2);
+}
+
+
+
+
+
+/* 4.4. SDR Section
+  ========================================================================== */
+
+.fsd .sidebarSection.sdrSection {
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.fsd .sidebarSection.sdrSection .sectionInner {
+    height: 100%;
+    
+    padding: 0 15px;
+    
+    overflow-y: auto;
+}
+
+.fsd .hideSDRButtonObj button,
+.fsd .hideSDRButtonObj button:link,
+.fsd .hideSDRButtonObj button:visited,
+.fsd .hideSDRButtonObj button:hover,
+.fsd .hideSDRButtonObj button:active,
+.fsd .hideSDRButtonObj button:focus {
+    margin-bottom: 20px;
+    
+    font-weight: 400;
+    text-align: left;
+    
+    background-image: url(../img/close-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.no-svg .fsd .hideSDRButtonObj button,
+.no-svg .fsd .hideSDRButtonObj button:link,
+.no-svg .fsd .hideSDRButtonObj button:visited,
+.no-svg .fsd .hideSDRButtonObj button:hover,
+.no-svg .fsd .hideSDRButtonObj button:active,
+.no-svg .fsd .hideSDRButtonObj button:focus {
+    background-image: url(../img/close-icon.png);
+}
+
+.fsd .analyzerButton {
+    width: 480px;
+    
+    position: absolute;
+    
+    bottom: 0;
+    
+    margin: 0;
+    border-top: 1px solid #FCFCFC;
+}
+
+.fsd .analyzerButton button,
+.fsd .analyzerButton button:link,
+.fsd .analyzerButton button:visited,
+.fsd .analyzerButton button:hover,
+.fsd .analyzerButton button:active,
+.fsd .analyzerButton button:focus {
+    text-align: left;
+    
+    background-image: url(../img/go-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.no-svg .fsd .analyzerButton button,
+.no-svg .fsd .analyzerButton button:link,
+.no-svg .fsd .analyzerButton button:visited,
+.no-svg .fsd .analyzerButton button:hover,
+.no-svg .fsd .analyzerButton button:active,
+.no-svg .fsd .analyzerButton button:focus {
+    background-image: url(../img/go-icon.png);
+}
+
+
+
+
+
+/* 4.5. Filters
+  ========================================================================== */
+  
+.fsd .selectorsRow {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.fsd .filter-title,
+.fsd .datasourceInput .inputLabel{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+    
+    padding-left: 15px;
+
+    color: #616161;
+    margin-bottom: 5px;
+}
+
+.fsd .filter-root-header-label {
+    line-height: 18px;
+}
+
+.fsd .filter-root-header {
+    border-color: #FFFFFF;
+}
+
+.fsd .filter-root-header:hover,
+.fsd .filter-root-container.expanded .filter-root-header,
+.fsd .filter-root-body{
+    border-color: #005DA6;
+}
+
+.fsd .selectorObj .filter-controls {
+    padding: 0;
+}
+
+.fsd .filter-root-container.collapsed > .filter-root-body,
+.fsd .filter-root-container.expanded > .filter-root-body {
+    transition: none;
+}
+  
+.fsd .zipCodeSearchObj input,
+.fsd .zipCodeSearchObj input:link,
+.fsd .zipCodeSearchObj input:visited,
+.fsd .zipCodeSearchObj input:hover,
+.fsd .zipCodeSearchObj input:active,
+.fsd .zipCodeSearchObj input:focus {
+    width: 100%;
+    
+    line-height: 28px;
+    
+    padding: 0 40px 0 15px;
+    margin: 0;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    
+    background-color: #FFFFFF;
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: top right 15px;
+}
+  
+.no-svg .fsd .zipCodeSearchObj input,
+.no-svg .fsd .zipCodeSearchObj input:link,
+.no-svg .fsd .zipCodeSearchObj input:visited,
+.no-svg .fsd .zipCodeSearchObj input:hover,
+.no-svg .fsd .zipCodeSearchObj input:active,
+.no-svg .fsd .zipCodeSearchObj input:focus {
+    background-image: url(../img/search-icon.png);
+}
+  
+.fsd .zipCodeSearchObj input:hover,
+.fsd .zipCodeSearchObj input:active,
+.fsd .zipCodeSearchObj input:focus,
+.fsd .datasourceInput input:hover,
+.fsd .datasourceInput input:active,
+.fsd .datasourceInput input:focus{
+    border-color: #005DA6;
+}
+
+.fsd .sdrObj .filter-root-container {
+    margin-bottom: 20px;
+}
+
+.fsd .filter-root-body.filter-expand-absolute {
+    position: relative;
+}
+
+.fsd .filter-overlay.expanded {
+    opacity: 0;
+}
+
+.fsd .datasourceInput input{
+    width: 100%;
+    
+    line-height: 28px;
+    
+    padding: 0 28px 0 15px;
+    margin: 0;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    
+    background-color: #FFFFFF;
+    
+    background-image: url(../img/validation-icons.svg);
+    background-position: -20px;
+    background-repeat: no-repeat;
+}
+
+.no-svg .fsd .datasourceInput input{
+    background-image: url(../img/validation-icons.png);
+}
+
+.fsd .datasourceInput.valid input{
+    background-position: top right;   
+}
+
+.fsd .datasourceInput.invalid input{
+    background-position: bottom right;
+}
+
+.fsd .datasourceInput.invalid .inputLabel:after{
+    position: absolute;
+    content: "(invalid name)";
+    color: #D53E4F;
+    margin-left: 4px;
+}
+
+.fsd .default-button.analyzerButtonObj .buttonComponent {
+    margin-top: 36px;
+    margin-left: 0;
+}
+
+.fsd .default-button.analyzerButtonObj .buttonComponent.disabled,
+.fsd .default-button.analyzerButtonObj .buttonComponent.disabled:hover{
+    opacity: 1;
+    background-color: #CCCCCC;
+    cursor: not-allowed;
+}
+
+
+
+/* 4.6. Table Info
+  ========================================================================== */
+  
+.fsd .tableInfoObj {
+    font-size: 11px;
+    line-height: 12px;
+    
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+    color: #CCCCCC;
+}
+  
+.fsd .tableSelectionObj button,
+.fsd .tableSelectionObj button:link,
+.fsd .tableSelectionObj button:visited,
+.fsd .tableSelectionObj button:hover,
+.fsd .tableSelectionObj button:active,
+.fsd .tableSelectionObj button:focus {
+    font-weight: 400;
+    text-align: left;
+    
+    margin-top: 0;
+    
+    background-image: url(../img/close-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.no-svg .fsd .tableSelectionObj button,
+.no-svg .fsd .tableSelectionObj button:link,
+.no-svg .fsd .tableSelectionObj button:visited,
+.no-svg .fsd .tableSelectionObj button:hover,
+.no-svg .fsd .tableSelectionObj button:active,
+.no-svg .fsd .tableSelectionObj button:focus  {
+    background-image: url(../img/close-icon.png);
+}
+
+
+
+
+
+/* 4.7. Locations Table
+  ========================================================================== */
+  
+.fsd .tableObj table {
+    border: 0 none;
+}
+  
+.fsd .tableObj table.table > thead > tr > th {
+    border: 1px solid #FFF;
+    border-right: 0 none;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 9px 15px;
+    
+    background: none;
+}
+
+.fsd .tableObj table.table > thead > tr > th,
+.fsd .tableObj table.table > thead > tr > th:link,
+.fsd .tableObj table.table > thead > tr > th:visited,
+.fsd .tableObj table.table > thead > tr > th:hover,
+.fsd .tableObj table.table > thead > tr > th:active,
+.fsd .tableObj table.table > thead > tr > th:focus {
+    outline: 0 none;
+}
+
+  
+.fsd .tableObj table.table > thead > tr > th:last-child {
+    border-right: 1px solid #FFF;
+}
+
+.fsd .tableObj table.table > thead > tr > th.sorting_desc,
+.fsd .tableObj table.table > thead > tr > th.sorting_asc,
+.fsd .tableObj table.table > thead > tr > th.sorting:hover {
+    color: #005DA6;
+}
+  
+.fsd .tableObj table.table > thead > tr > th > span {
+    display: block;
+    float: left;
+}
+  
+.fsd .tableObj table.table > thead > tr > th > span.sort-arrow {
+    width: 10px;
+    height: 20px;
+    
+    margin-left: 5px;
+    
+    background-image: url(../img/sort-arrow-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+  
+.no-svg .fsd .tableObj table.table > thead > tr > th > span.sort-arrow {
+    background-image: url(../img/sort-arrow-sprite.png);
+}
+  
+.fsd .tableObj table.table > thead > tr > th.sorting_asc > span.sort-arrow {
+    background-position: right center;
+}
+  
+.fsd .tableObj table.table > thead > tr > th.sorting_desc > span.sort-arrow {
+    background-position: center center;
+}
+  
+.fsd .tableObj table.table > tbody > tr > td {
+    border: 0 none;
+    border-top: 1px solid #F4F4F4;
+    padding: 5px 15px;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+}
+  
+/* fix for first iteration. should be only: */
+/* .fsd .tableObj table.table.high-level > tbody > tr > td.column1  */
+.fsd .tableObj table.table.high-level > tbody > tr > td.column0,
+.fsd .tableObj table.table.high-level > tbody > tr > td.column1 {
+    text-align: left;
+}
+  
+.fsd .tableObj table.table.detail-level > tbody > tr > td.column0 {
+    text-align: left;
+}
+  
+.fsd .tableObj table.table > tbody > tr > td > .table-cell-wrapper {
+    display: block;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.fsd .tableObj table.table.high-level > tbody > tr > td.column1 > .table-cell-wrapper {
+    width: 105px;
+}
+  
+.fsd .tableObj table.table.detail-level > tbody > tr > td.column0 > .table-cell-wrapper {
+    width: 195px;
+}
+
+.fsd .tableObj .table-striped > tbody > tr:nth-child(odd) > td {
+    background: #FFFFFF;
+    
+    border-left: 1px solid #FFFFFF;
+}
+
+.fsd .tableObj .table-striped > tbody > tr:nth-child(odd) > td:last-child {
+    border-right: 1px solid #FFFFFF;
+}
+
+.fsd .tableObj .table-striped > tbody > tr:nth-child(even) > td {
+    background: #FCFCFC;
+    
+    border-left: 1px solid #FCFCFC;
+}
+
+.fsd .tableObj .table-striped > tbody > tr:nth-child(even) > td:last-child {
+    border-right: 1px solid #FCFCFC;
+}
+
+.fsd table.table-striped > thead > tr > th.sorting_disabled > span.sort-arrow{
+    visibility: hidden;
+}
+
+.fsd .dataTables_info,
+.fsd .dataTables_paginate.paging_customInput .paginate_button.first,
+.fsd .dataTables_paginate.paging_customInput .paginate_button.last,
+.fsd .dataTables_paginate.paging_customInput .paginate_page{
+    display: none !important;
+}
+
+.fsd .dataTables_paginate.paging_customInput {
+    width: 185px;
+    
+    padding: 0;
+    margin: 10px auto;
+    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    
+    float: none;
+}
+
+.fsd .dataTables_paginate.paging_customInput:before,
+.fsd .dataTables_paginate.paging_customInput:after {
+    display: table;
+    content: " ";
+}
+
+.fsd .dataTables_paginate.paging_customInput:after {
+    clear: both;
+}
+
+.fsd .dataTables_paginate.paging_customInput > *{
+    float: left;
+    display: block;
+}
+
+.fsd .dataTables_paginate.paging_customInput .paginate_button {
+    width: 30px;
+    height: 30px;
+    
+    padding: 0;
+    margin: 0;
+    border: 0 none !important;
+    
+    background-color: none !important;
+    background-image: url(../img/pagination-arrows-sprite.svg) !important;
+    background-repeat: no-repeat;
+    
+    box-shadow: none !important;
+}
+
+.no-svg .fsd .dataTables_paginate.paging_customInput .paginate_button {
+    background: url(../img/pagination-arrows-sprite.png) !important;
+}
+
+.fsd .dataTables_paginate.paging_customInput .paginate_button.previous {
+    background-position: top left;
+}
+
+.fsd .dataTables_paginate.paging_customInput .paginate_button.next {
+    background-position: top right;
+}
+
+.fsd .dataTables_paginate.paging_customInput .paginate_button.previous.disabled {
+    background-position: bottom left;
+}
+
+.fsd .dataTables_paginate.paging_customInput .paginate_button.next.disabled {
+    background-position: bottom right;
+}
+
+.fsd .dataTables_paginate.paging_customInput .paginate_of {
+    width: 20px;
+    
+    color: #555555;
+    text-align: left;
+    
+    margin-right: 30px;
+    margin-left: 5px;
+}
+
+.fsd .dataTables_paginate.paging_customInput input.paginate_input,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:link,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:visited,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:hover,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:active,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:focus {
+    width: 30px;
+    
+    text-align: center;
+    line-height: 28px;
+    color: #005DA6;
+    
+    padding: 0;
+    margin: 0 0 0 40px;
+    border: 1px solid #FFFFFF;
+    
+    outline: 0 none;
+}
+  
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:hover,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:active,
+.fsd .dataTables_paginate.paging_customInput input.paginate_input:focus {
+    border-color: #005DA6;
+}
+
+.fsd table.high-level > tbody > tr:nth-child(even):hover > td,
+.fsd table.high-level > tbody > tr:nth-child(odd):hover > td {
+    color: #FFFFFF;
+    
+    cursor: pointer;
+    
+    background-color:   #005DA6;
+    border-right-color: #005DA6;
+    border-left-color:  #005DA6;
+}
+
+.fsd .posArrow {
+    width: 20px;
+    height: 20px;
+    
+    margin-left: 5px;
+    
+    background-image: url(../img/pos-arrow-sprite.svg);
+    background-repeat: no-repeat;
+}
+
+.no-svg .fsd .posArrow {
+    background-image: url(../img/pos-arrow-sprite.png);
+}
+
+.fsd .posArrow.upArrow {
+    background-position: top left;
+}
+
+.fsd .posArrow.noChangeArrow {
+    background-position: center left;
+}
+
+.fsd .posArrow.downArrow {
+    background-position: bottom left;
+}
+
+.fsd tr:hover .posArrow.upArrow {
+    background-position: top right;
+}
+
+.fsd tr:hover .posArrow.noChangeArrow {
+    background-position: center right;
+}
+
+.fsd tr:hover .posArrow.downArrow {
+    background-position: bottom right;
+}
+
+.fsd table.detail-level > tbody > tr:hover > td.column0 {
+    color: #005DA6;
+}
+
+.fsd table.detail-level > tbody > tr:hover > td {
+    cursor: default;
+}
+
+
+
+
+
+/* 4.8. Tooltips
+  ========================================================================== */
+  
+.fsd .tipsy.info-tooltip > .tipsy-arrow {
+    visibility: hidden;
+}
+  
+.fsd .tipsy.info-tooltip > .tipsy-inner {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+    text-align: left;
+    color: #555555;
+    
+    border-radius: 0;
+    border: 0 none;
+    padding: 0;
+    
+    box-shadow: 1px 1px 3px rgba(104,104,104,.35);
+    
+    background: #FFFFFF;
+}
+
+.fsd .info-tooltip-title {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    
+    padding: 5px 20px;
+    
+    background: #0F2B5B;
+    color: #FFF;
+}
+
+.fsd .info-tooltip-description {
+    font-weight: 400;
+    
+    padding: 15px 20px;
+}
+  
+.fsd .tipsy.breakdownTooltip > .tipsy-arrow {
+    visibility: hidden;
+}
+  
+.fsd .tipsy.breakdownTooltip > .tipsy-inner {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+    text-align: left;
+    color: #555555;
+    
+    border-radius: 0;
+    border: 0 none;
+    padding: 0;
+    min-width: 200px;
+    
+    box-shadow: 1px 1px 3px rgba(104,104,104,.35);
+    
+    background: #FFFFFF;
+}
+
+.fsd .tipsy.breakdownTooltip .header {
+    padding: 5px 10px;
+    
+    font-size: 9px;
+    
+    color: #FFF;
+    background: #343E48;
+}
+
+.fsd .tipsy.breakdownTooltip .tooltipInfo {
+    background: #555555;
+    color: #FFF;
+    
+    font-size: 11px;
+}
+
+.fsd .tipsy.breakdownTooltip .tooltipInfo > div {
+    border-bottom: 1px solid #FFF;
+    padding: 10px;
+}
+
+.fsd .tipsy.breakdownTooltip .tooltipInfo > div:last-child {
+    border-bottom: 0 none;
+}
+
+
+
+
+
+/* 4.9. Date Selectors
+  ========================================================================== */
+  
+.fsd .sdrObj .custom-date-block {
+    margin-bottom: 20px;
+}
+
+.fsd .sdrObj .custom-date-block .date-display,
+.fsd .sdrObj .custom-date-block .date-display:link,
+.fsd .sdrObj .custom-date-block .date-display:visited,
+.fsd .sdrObj .custom-date-block .date-display:hover,
+.fsd .sdrObj .custom-date-block .date-display:active,
+.fsd .sdrObj .custom-date-block .date-display:focus {
+    border: 1px solid #FFF;
+    padding: 5px 40px 5px 15px;
+    
+    text-align: left;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.fsd .sdrObj .custom-date-block .date-display:hover,
+.fsd .sdrObj .custom-date-block .date-display:active,
+.fsd .sdrObj .custom-date-block.open .date-display,
+.fsd .sdrObj .custom-date-block.open .date-display:link,
+.fsd .sdrObj .custom-date-block.open .date-display:visited,
+.fsd .sdrObj .custom-date-block.open .date-display:hover,
+.fsd .sdrObj .custom-date-block.open .date-display:active,
+.fsd .sdrObj .custom-date-block.open .date-display:focus {
+    border-color: #005DA6;
+}
+
+.fsd .sdrObj .custom-date-block .date-display:before {
+    width: 10px;
+    height: 10px;
+    
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 10px;
+    
+    margin: auto 0;
+}
+
+.fsd .sdrObj .custom-date-block .date-display:before,
+.fsd .sdrObj .custom-date-block.open .date-display:before {
+    background: url(../img/filter-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.no-svg .fsd .sdrObj .custom-date-block .date-display:before,
+.no-svg .fsd .sdrObj .custom-date-block.open .date-display:before {
+    background: url(../img/filter-arrow.png);
+}
+
+.fsd .sdrObj .custom-date-block .date-display:hover:before,
+.fsd .sdrObj .custom-date-block .date-display:active:before,
+.fsd .sdrObj .custom-date-block .date-display:focus:before {
+    background-position: -10px center;
+}
+
+.fsd .sdrObj .custom-date-block.open .date-display:before {
+    background-position: -20px center;
+}
+
+.fsd .sdrObj .custom-date-block.open .date-display:hover:before,
+.fsd .sdrObj .custom-date-block.open .date-display:active:before,
+.fsd .sdrObj .custom-date-block.open .date-display:focus:before {
+    background-position: -30px center;
+}
+
+.fsd .dateSelectorTitle {
+    padding-left: 15px;
+    margin-bottom: 5px;
+    
+    color: #616161;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.fsd .sdrObj .calendar-dialog {
+    position: relative;
+    border: 1px solid #005DA6;
+}
+
+
+
+
+
+/* 4.10. Checkbox
+  ========================================================================== */
+  
+.fsd .toggleGroup.horizontal {
+    list-style: none;
+    
+    padding: 0;
+    margin: 0;
+}
+  
+.fsd li.toggleGroup.horizontal {
+    margin-top: 17px;
+    
+    background: #FFF;
+}
+  
+.fsd .toggleGroup.horizontal label {
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 400;
+    
+    padding: 1px 37px 3px 37px;
+    margin: 0;
+    border: 1px solid #FFF;
+    
+    position: relative;
+    
+    cursor: pointer;
+}
+  
+.fsd .toggleGroup.horizontal label:hover {
+    border: 1px solid #005DA6;
+}
+  
+.fsd .toggleGroup.horizontal input {
+    display: none;
+}
+  
+.fsd .toggleGroup.horizontal label:before {
+    position: absolute;
+    content: '';
+    
+    top:    0;
+    bottom: 0;
+    left: 11px;
+    
+    width:  15px;
+    height: 15px;
+    
+    border: 1px solid #005DA6;
+    margin: auto 0;
+    
+    background: #FFF;
+    
+    transition: background .3s ease-in-out;
+}
+  
+.fsd .toggleGroup.horizontal input:checked + label:before {
+    background: #005DA6;
+}
+  
+.fsd .toggleGroup.horizontal label:after {
+    position: absolute;
+    content: '';
+    
+    top:    0;
+    bottom: 0;
+    left: 13px;
+    
+    width:  11px;
+    height: 11px;
+    
+    margin: auto 0;
+    
+    background-image: url(../img/checkbox-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    opacity: 0;
+    
+    transition: opacity .3s ease-in-out;
+}
+  
+.no-svg .fsd .toggleGroup.horizontal label:after {
+    background-image: url(../img/checkbox-icon.png);
+}
+  
+.fsd .toggleGroup.horizontal input:checked + label:after {
+    opacity: 1;
+}
+
+/* 4.11. Popups
+  ========================================================================== */
+
+.blockUI.blockOverlay{
+    z-index: 2001 !important;
+}
+
+.fsd .requestInfoOverlay,
+.fsd .requestReadyOverlay{
+    background: rgba(0,0,0,0.5);
+    z-index: 2000 !important;
+}
+
+.fsd .notificationPopup{
+    width: 440px;
+    height: 150px;
+    
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    
+    -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+}
+
+.fsd .notificationPopup.requestReadyPopup{
+    height: 110px;
+}
+
+.fsd .requestInfoPopup{
+    left: calc(50% - 220px) !important;
+    top: calc(50% - 75px) !important;
+    
+    -webkit-animation: requestpopupscroll 0.5s;
+    -moz-animation:    requestpopupscroll 0.5s;
+    -o-animation:      requestpopupscroll 0.5s;
+    animation:         requestpopupscroll 0.5s;
+}
+
+@keyframes requestpopupscroll {
+    0%   {top: -200px;}
+    100% {top: calc(50% - 75px) !important;}
+}
+
+.fsd .requestReadyPopup{
+    top: 60px !important;
+    left: calc( 100% - 480px) !important;
+    -webkit-animation: requestreadyscroll 0.4s;
+    -moz-animation:    requestreadyscroll 0.4s;
+    -o-animation:      requestreadyscroll 0.4s;
+    animation:         requestreadyscroll 0.4s;
+}
+
+@keyframes requestreadyscroll {
+    0%   {top: -200px;}
+    100% {top: 60px !important;}
+}
+
+
+.fsd .notificationPopup .close,
+.fsd .notificationPopup .arrow{
+    display: none !important;
+}
+
+.fsd .notificationPopup h2,
+.fsd .notificationPopup p{
+    font-size: 11px;
+    color: #555555;
+}
+
+.fsd .notificationPopup h2{
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.fsd .notificationPopup p{
+    font-weight: 300;
+}
+
+.fsd .popupComponent .buttonComponent.disabled,
+.fsd .popupComponent .buttonComponent.disabled:hover{
+    opacity: 1;
+    background-color: #CCCCCC;
+    cursor: not-allowed;
+}
+
+.fsd .popupComponent .buttonComponent{
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+  5. Content
+  ========================================================================== */
+
+.fsd .content {
+    width: calc(100% - 21px); /* expand content when sidebar is collapsed */
+    height: 100%;
+    
+    transition: width .3s ease-in-out;
+}
+
+.fsd .visible-sidebar .content {
+    width: calc(100% - 501px); /* subtract sidebar width when it is expanded */
+}
+
+
+
+
+
+/* 5.1. Map
+  ========================================================================== */
+ 
+.fsd .mapObj {
+    height: calc(100% - 60px); /* leave 60px for the footer */
+    width: 100%;
+    
+    background: #CECECE;
+}
+
+.fsd .mapInfoButton .info-marker {
+    height: 22px;
+    width:  22px;
+    
+    text-align: center;
+    line-height: 22px;
+    
+    background: #005DA6;
+    color: #FFF;
+    
+    display: block;
+    
+    border-radius: 0;
+    padding: 0;
+    margin: 0 0 10px;
+    border: 0 none;
+    border-top: 0 none;
+    
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    
+    cursor: default;
+}
+
+.fsd .mapObj .map-controls-mode,
+.fsd .mapObj .map-control-button.map-control-zoombox{
+    display: none;
+}
+
+.fsd .mapObj .map-control-panel .map-control-button {
+    width: 22px;
+    height: 22px;
+    
+    border: 1px solid #FFF;
+    
+    margin-bottom: 10px;
+    
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    
+    background-image: url(../img/map-controls-icons.svg);
+    background-repeat: no-repeat;
+}
+
+.no-svg .fsd .mapObj .map-control-panel .map-control-button {
+    background-image: url(../img/map-controls-icons.png);
+}
+
+.fsd .map-control-panel .map-control-button.map-control-zoom-out,
+.fsd .map-control-panel .map-control-button.map-control-zoom-out:hover {
+    background-position: right center;
+}
+
+.fsd .map-control-panel .map-control-button.map-control-zoom-in,
+.fsd .map-control-panel .map-control-button.map-control-zoom-in:hover {
+    background-position: center center;
+}
+
+.fsd .mapObj .map-control-panel .map-control-button:hover {
+    background-color: #FFF;
+    
+    border: 1px solid #005DA6;
+}
+
+.fsd .mapObj .mapZoomButton {
+    width:  22px;
+    height: 22px;
+    
+    background-color: #FFF;
+    background-image: url(../img/map-controls-icons.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+    margin-bottom: 10px;
+    border: 1px solid #FFF;
+    
+    cursor: pointer;
+    
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    
+    display:none;
+}
+
+.no-svg .fsd .mapObj .mapZoomButton {
+    background-image: url(../img/map-controls-icons.png);
+}
+
+.fsd .mapObj .mapZoomButton:hover {
+    border: 1px solid #005DA6;
+}
+
+.fsd .mapObj .olPopup {
+    height: auto !important;
+    width: 200px !important;
+    
+    font-size: 11px;
+    
+    margin-top: -10px;
+    
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.fsd .mapObj .olPopupContent {
+    height: auto !important;
+    padding: 5px 10px;
+    
+    line-height: 16px;
+}
+
+.fsd .mapObj .stateId {
+    margin-right: 30px;
+}
+
+.fsd .mapObj .stateValue {
+    font-size: 16px;
+    
+    color: #005DA6;
+}
+
+.fsd .olControlScaleLine {
+    display: none;
+}
+
+
+
+
+
+/* 5.2. Footer
+  ========================================================================== */
+  
+.fsd .footer {
+    height: 60px;
+    
+    background: #FFFFFF;
+    background-image: url(../img/pentaho-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+}
+  
+.no-svg .fsd .footer {
+    background-image: url(../img/pentaho-logo.png);
+}
+
+
+
+
+
+/* 5.3. Map Gradient bar
+========================================================================== */
+
+.fsd .scale-container {
+    width: 200px;
+    
+    background: none;
+    
+    font-size: 12px;
+    
+    border-radius: 5px;
+    padding: 0;
+    
+    color: #555;
+    
+    position: relative;
+    
+    top: -50px;
+    margin-left: 25px;
+}
+
+.fsd .scale-bucket-label {
+    width: 100%;
+    
+    text-align: center;
+}
+
+.fsd .scale-bucket-bar {
+    height: 20px;
+    width: 100%;
+    
+    border: 1px solid #FFF;
+    border-right: 0 none;
+}
+
+.fsd .scale-bucket:last-child .scale-bucket-bar {
+    border-right: 1px solid #FFF;
+}
+
+.fsd .gradValBar{
+    font-size: 10px;
+    margin-top:-4px;
+    padding: 0 20px 0 20px;
+    border-radius:4px;
+}
+.fsd .gradientValues > div{
+    display: inline-block;
+}
+
+.fsd .gradientValues,
+.fsd .infoSection{
+    color:#D9D9D9;
+}
+
+.fsd .infoSection{
+    font-size:11px;
+}
+
+.fsd .gradValBar {
+    /* position label on top of map */
+    position: absolute;
+    z-index: 1001;
+    top: 15px;
+    right: 25px;
+}
+
+.WDhidden{
+    display:none;
+}
+
+  
+  
+  

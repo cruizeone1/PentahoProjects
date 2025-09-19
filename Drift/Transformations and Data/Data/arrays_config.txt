@@ -1,0 +1,21 @@
+Array_ID~Array Name~Service Tier
+A_001~Chongqing~Goold
+A_002~Shanghai~Silver
+A_003~Delhi~Gold
+A_004~Beijing~Platinum
+A_005~Mumbai~Gold
+A_006~Lagos~Silver
+A_007~Karachi~Gold
+A_008~Dhaka~Bronze
+A_009~Guangzhou~Gold
+A_010~Istanbul~Silver
+A-11~Tokyo~Gold
+A_012~Bengaluru~Bronze
+A_013~Moscow~Gold
+A_014~São Paulo~Silver
+A_015~Lahore~Gold
+A_016~Cairo~Gld
+A_017~Kinshasa~Bronze
+A_018~Jakarta~Bronze
+A_019~Seoul~Bronze
+A_020~Wenzhou~Bronze

@@ -1,0 +1,53 @@
+Proudct_ID,Category,Line,Brand,Product,Package
+1,Chocolate Candy,Mounds,Almond Joy,Almond Joy,Almond Joy
+2,Chocolate Candy,Hershey,Hershey's Pot of Gold,Hershey's Pot of Gold,Hershey's Pot of Gold
+3,Chocolate Candy,Kit Kat,Kit Kat,Kit Kat,Kit Kat
+4,Chocolate Candy,Reese's,Reese's Peanut Butter Cups,Reese's Peanut Butter Cups,Reese's Peanut Butter Cups
+5,Chocolate Candy,Hershey,Hershey's Special Dark,Hershey's Special Dark,Hershey's Special Dark
+6,Sugar Confectionary,Jolly Rancher,Jolly Rancher Gummies,Jolly Rancher Gummies,Jolly Rancher Gummies
+7,Sugar Confectionary,Twizzlers,Twizzlers Bites,Twizzlers Bites,Twizzlers Bites
+8,Gum & Mint,Ice Breakers,Ice Breakers Frost Mints,Ice Breakers Frost Mints,Ice Breakers Frost Mints
+9,Chocolate Candy,Cadbury,Cadbury,Cadbury,Cadbury
+10,Chocolate Candy,Hershey,Hershey's Kisses,Kisses Milk Chocolate,Kisses Milk Chocolate
+11,Chocolate Candy,Hershey,Hershey's Krackel,Hershey's Krackel,Hershey's Krackel
+12,Chocolate Candy,Reese's,Reese's Pieces,Reese's Pieces,Reese's Pieces
+13,Chocolate Candy,Peppermint Patty,York Peppermint Patty,York Peppermint Patty,York Peppermint Patty
+14,Sugar Confectionary,Jolly Rancher,Jolly Rancher Awesome Twosome,Jolly Rancher Awesome Twosome,Jolly Rancher Awesome Twosome
+15,Gum & Mint,Ice Breakers,Ice Breakers DUO Raspberry,Ice Breakers DUO Raspberry,Ice Breakers DUO Raspberry
+16,Gum & Mint,Ice Breakers,Ice Breakers Sours,Ice Breakers Sours,Ice Breakers Sours
+17,Chocolate Candy,5th Avenue,5th Avenue,5th Avenue,5th Avenue
+18,Chocolate Candy,Hershey,Hershey's Kisses,Kisses & Hugs,Kisses & Hugs
+19,Chocolate Candy,Mild Dud,Milk Duds,Milk Duds,Milk Duds
+20,Chocolate Candy,Reese's,Reese's Crispy Crunch,Reese's Crispy Crunch,Reese's Crispy Crunch
+21,Sugar Confectionary,Good & Plenty,Good & Plenty,Good & Plenty,Good & Plenty
+22,Sugar Confectionary,Jolly Rancher,Jolly Rancher STIX Candy,Jolly Rancher STIX Candy,Jolly Rancher STIX Candy
+23,Gum & Mint,Ice Breakers,Ice Breakers DUO Strawberry,Ice Breakers DUO Strawberry,Ice Breakers DUO Strawberry
+24,Gum & Mint,Ice Breakers ,Ice Breakers Ice Cube Gum,Ice Breakers Ice Cube Gum,Ice Breakers Ice Cube Gum
+25,Chocolate Candy,Heath,Heath Bar,Heath Bar,Heath Bar
+26,Chocolate Candy,Hershey,Hershey's Kisses,Kisses Cookie 'n Crème,Kisses Cookie 'n Crème
+27,Chocolate Candy,Hershey,Hershey's Miniatures,Hershey's Miniatures,Hershey's Miniatures
+28,Chocolate Candy,Reese's,Reese's Fast Break,Reese's Fast Break,Reese's Fast Break
+29,Sugar Confectionary,Jolly Rancher,Jolly Rancher Bites,Jolly Rancher Bites,Jolly Rancher Bites
+30,Sugar Confectionary,Jolly Rancher,Jolly Rancher Lollipops,Jolly Rancher Lollipops,Jolly Rancher Lollipops
+31,Gum & Mint,Breath Savers,Breath Savers 3Hour,Breath Savers 3Hour,Breath Savers 3Hour
+32,Chocolate Candy,Hershey,Hershey's Bliss,Hershey's Bliss,Hershey's Bliss
+33,Chocolate Candy,Hershey,Hershey's Kisses,Kisses Special Dark,Kisses Special Dark - 24 oz
+34,Chocolate Candy,Mounds,Mounds Bar,Mounds Bar,Mounds Bar
+35,Chocolate Candy,Reese's,Reese's Nutrageous,Reese's Nutrageous,Reese's Nutrageous
+36,Sugar Confectionary,Jolly Rancher,Jolly Rancher Crunch N'Chew,Jolly Rancher Crunch N'Chew,Jolly Rancher Crunch N'Chew
+37,Sugar Confectionary,Twizzlers,Twizzlers Twists,Twizzlers Twists,Twizzlers Twists
+38,Gum & Mint,Breath Savers,Breath Savers Mints,Breath Savers Mints,Breath Savers Mints
+39,Chocolate Candy,Hershey,Hershey Bar,Hershey Bar,Hershey Bar
+40,Chocolate Candy,Hershey,Hershey's Kisses,Kisses Special Dark,Kisses Special Dark - 48 oz
+41,Chocolate Candy,Mr. Goodbar,Mr Goodbar,Mr Goodbar,Mr Goodbar
+42,Chocolate Candy,Rolo,Rolo,Rolo,Rolo
+43,Sugar Confectionary,Jolly Rancher,Jolly Rancher Hard Candy,Jolly Rancher Hard Candy,Jolly Rancher Hard Candy
+44,Sugar Confectionary,Twizzlers,Twizzlers Pull N Peel,Twizzlers Pull N Peel,Twizzlers Pull N Peel
+45,Gum & Mint,Bubbly Yum,Bubble Yum Gum,Bubble Yum Gum,Bubble Yum Gum
+46,Chocolate Candy,Hershey,Hershey Extra Dark,Hershey Extra Dark,Hershey Extra Dark
+47,Chocolate Candy,Hershey,Hershey's Kisses,Kisses Special Dark,Kisses Special Dark - 12 oz
+48,Chocolate Candy,Hershey,Hershey's Nuggets,Hershey's Nuggets,Hershey's Nuggets
+49,Chocolate Candy,Skor,Skor,Skor,Skor
+50,Sugar Confectionary,Jolly Rancher,Jolly Rancher Chews,Jolly Rancher Chews,Jolly Rancher Chews
+51,Sugar Confectionary,Twizzlers,Twizzlers Nibs,Twizzlers Nibs,Twizzlers Nibs
+52,Gum & Mint,Ice Breakers,Ice Breakers Mints,Ice Breakers Mints,Ice Breakers Mints

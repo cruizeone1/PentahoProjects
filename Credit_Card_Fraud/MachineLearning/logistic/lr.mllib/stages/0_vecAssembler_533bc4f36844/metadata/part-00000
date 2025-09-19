@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.VectorAssembler","timestamp":1473803551312,"sparkVersion":"1.6.0","uid":"vecAssembler_533bc4f36844","paramMap":{"outputCol":"features","inputCols":["Card_Number","Expiry_Date","ShipToCustomerNumber","ShipToZip","OrderDollarAmount","NumItems","AvgLineItemPrice","ZipDistance","BillingShippingZipEqual"]}}

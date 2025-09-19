@@ -1,0 +1,7 @@
+172.19.22.140 - hcpnbu [24/May/2016:09:07:30 -0600] "HEAD /nbu2/ HTTP/1.1" 200 0 nbutest1@hs3 9
+172.19.22.140 - hcpnbu [24/May/2016:09:08:30 -0600] "GET /nbu2/?location HTTP/1.1" 200 124 nbutest1@hs3 5
+172.19.22.140 - hcpnbu [24/May/2016:09:09:29 -0600] "HEAD /nbu1/ HTTP/1.1" 200 0 nbutest1@hs3 2
+172.19.22.140 - hcpnbu [24/May/2016:09:10:28 -0600] "GET /nbu1/?location HTTP/1.1" 200 124 nbutest1@hs3 5
+172.19.22.140 - hcpnbu [24/May/2016:09:11:27 -0600] "GET / HTTP/1.1" 200 612 nbutest1@hs3 17
+172.19.22.140 - hcpnbu [24/May/2016:09:11:35 -0600] "HEAD /nub4/ HTTP/1.1" 200 0 nbutest1@hs3 2
+172.19.22.140 - hcpnbu [24/May/2016:09:12:34 -0600] "GET /nub4/?location HTTP/1.1" 200 124 nbutest1@hs3 5
